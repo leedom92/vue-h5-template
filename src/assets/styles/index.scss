@@ -1,0 +1,36 @@
+@import './variables.scss';
+
+*{
+  padding: 0;
+  margin: 0;
+}
+
+#app {
+  font-family: Avenir, Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: $basic-color;
+}
+
+// flex弹性布局
+@each $key, $value in $flex-jc {
+  .jc-#{$key} {
+    justify-content: $value;
+  }
+}
+
+@each $key, $value in $flex-ai {
+  .ai-#{$key} {
+    align-items: $value;
+  }
+}
+
+@each $key, $value in $flex-number {
+  .flex-#{$value} {
+    flex: $value
+  }
+}
+
+.as-center {
+  align-self: center;
+}
