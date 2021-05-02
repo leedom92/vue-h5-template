@@ -1,24 +1,21 @@
 # vue-h5-template
+🍰Vue移动端项目模版 Vue CLI 4 + Vue Router + Vuex + Vant + Sass + NProgress + js-cookie + jsencrypt
 
-## Project setup
-```
-yarn install
-```
+## Installation
 
-### Compiles and hot-reloads for development
-```
-yarn serve
-```
+```bash
+git clone https://github.com/leedom92/vue-h5-template.git
 
-### Compiles and minifies for production
-```
-yarn build
+cd vue-h5-template
+
+npm install
+
+npm run serve
 ```
 
-### Lints and fixes files
-```
-yarn lint
-```
+## Thanks
+[PanJiaChen](https://github.com/PanJiaChen/vue-element-admin) & [sunnie](https://github.com/sunniejs/vue-h5-template) 
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+## License
+
+MIT License Copyright (c) 2021 leedom
