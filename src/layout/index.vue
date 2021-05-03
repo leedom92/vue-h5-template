@@ -27,9 +27,7 @@ export default {
     }
   },
   watch: {},
-  created() {
-    console.log(this.$router)
-  },
+  created() {},
   mounted() {},
   methods: {}
 }
