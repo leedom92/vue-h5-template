@@ -4,7 +4,7 @@
 
 <template>
   <div class='about'>
-    <div class="d-flex flex-column jc-center ai-center animate__animated animate__bounce" style="margin-top: 33.33%;">
+    <div class="d-flex flex-column jc-center ai-center animate__animated animate__bounce vh-100">
       <img :src="require('_i/logo.png')" alt="">
       <h2>VUE H5 开发模版</h2>
       <p class="text-center ">

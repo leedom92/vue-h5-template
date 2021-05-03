@@ -56,7 +56,7 @@ export default {
 <style scoped lang='scss'>
 @import '_s/variables';
 .home {
-  padding: 10px;
+  padding: 10px 10px 80px 10px;
   h1 {
     background: url('~@/assets/images/logo.png') no-repeat;
     background-size: 2.2rem;
