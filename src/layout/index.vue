@@ -14,6 +14,7 @@
 
 <script>
 import TabBar from '_c/TabBar/index'
+import { basicRoutes } from '@/router/router.config'
 export default {
   name: 'Layout',
   components: {
@@ -22,18 +23,18 @@ export default {
   props: {},
   data() {
     return {
-      routeList: [
-        { name: '首页', to: '/', icon: 'wap-home-o' },
-        { name: '关于', to: '/about', icon: 'user-o' }
-      ]
+      routeList: basicRoutes[0].children
     }
   },
   watch: {},
-  created() {},
+  created() {
+    console.log(this.$router)
+  },
   mounted() {},
   methods: {}
 }
 </script>
 
 <style scoped lang='scss'>
+
 </style>

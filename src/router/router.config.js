@@ -3,7 +3,7 @@ import Layout from '@/layout'
 /**
  * 路由表
  */
-export const routes = [
+export const basicRoutes = [
   {
     path: '/',
     component: Layout,
@@ -14,20 +14,14 @@ export const routes = [
         path: '/',
         name: 'Home',
         component: () => import('@/views/home'),
-        meta: { title: '首页', keepAlive: true }
+        meta: { title: '首页', icon: 'wap-home-o', keepAlive: true, show: true }
       },
       {
         path: '/about',
         name: 'About',
         component: () => import('@/views/about'),
-        meta: { title: '关于', keepAlive: true }
+        meta: { title: '关于', icon: 'user-o', keepAlive: true, show: true }
       }
     ]
-  },
-  {
-    path: '/404',
-    component: () => import('@/views/error-page/404')
-  },
-  // 404 page must be placed at the end !!!
-  { path: '*', redirect: '/404' }
+  }
 ]

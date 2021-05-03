@@ -4,7 +4,9 @@
 
 <template>
   <van-tabbar route>
-    <van-tabbar-item v-for="(item, $index) in routes" :key="$index" replace :to="item.to" :icon="item.icon">{{ item.name }}</van-tabbar-item>
+    <template v-for="(item, $index) in routes">
+      <van-tabbar-item v-if="item.meta.show"  :key="$index" replace :to="item.path" :icon="item.meta.icon">{{ item.meta.title }}</van-tabbar-item>
+    </template>
   </van-tabbar>
 </template>
 

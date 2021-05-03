@@ -1,6 +1,6 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
-import { routes } from './router.config'
+import { basicRoutes } from './router.config'
 import setPageTitle from '_u/set-page-title'
 import NProgress from 'nprogress'
 import 'nprogress/nprogress.css'
@@ -8,6 +8,18 @@ import 'nprogress/nprogress.css'
 NProgress.configure({ showSpinner: false }) // NProgress Configuration
 
 Vue.use(VueRouter)
+
+export const constantRoutes = [
+  {
+    path: '/404',
+    component: () => import('@/views/error-page/404')
+  },
+  // 404 page must be placed at the end !!!
+  { path: '*', redirect: '/404' }
+]
+
+export const routes = [...basicRoutes, ...constantRoutes]
+
 
 const router = new VueRouter({
   routes,
