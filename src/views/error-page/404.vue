@@ -3,24 +3,42 @@
 */
 
 <template>
-  <div class='no-page d-flex jc-center ai-center'>
-    <h1 class="animate__animated animate__backInDown">404</h1>
+  <div class="no-page">
+    <div class="d-flex flex-column jc-center ai-center animate__animated animate__backInDown">
+      <h1>404</h1>
+      <p >
+        {{ time }}秒后回到首页
+      </p>
+    </div>
   </div>
 </template>
 
 <script>
 export default {
-  name: 'Error404',
+  name: "Error404",
   components: {},
   props: {},
   data() {
-    return {}
+    return {
+      time: 5,
+    };
   },
   watch: {},
   created() {},
-  mounted() {},
-  methods: {}
-}
+  mounted() {
+    setInterval(() => {
+      this.time--;
+      if (this.time === 0) {
+        this.returnHome();
+      }
+    }, 1000);
+  },
+  methods: {
+    returnHome() {
+      this.$router.replace("/");
+    },
+  },
+};
 </script>
 
 <style scoped lang='scss'>

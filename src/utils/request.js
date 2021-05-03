@@ -58,6 +58,7 @@ service.interceptors.response.use(
     if (res.code == 200) {
       return res
     } else {
+      Toast.clear()
       Notify({ type: 'danger', message: res.msg });
       return Promise.reject(new Error(res.msg || 'Error'))
     }
