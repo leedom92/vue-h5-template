@@ -11,13 +11,9 @@
 </template>
 
 <script>
-import { Tabbar, TabbarItem } from "vant";
 export default {
   name: 'Index',
-  components: {
-    [Tabbar.name]: Tabbar,
-    [TabbarItem.name]: TabbarItem,
-  },
+  components: {},
   props: {
     routes: {
       type: Array,

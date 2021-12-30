@@ -3,11 +3,11 @@
 */
 
 <template>
-  <div class="home animate__animated animate__fadeInDown">
-    <h1>
+  <div class="home p-4 animate__animated animate__fadeInDown">
+    <h1 class="py-2">
       <span>VUE H5 开发模版</span>
     </h1>
-    <h3>A vue h5 template width vant ui </h3>
+    <h3 class="text-gray-600 py-4 text-2xl">A vue h5 template width vant ui</h3>
     <br>
     <van-cell-group>
       <van-cell title="Vue CLI 4" />
@@ -15,7 +15,7 @@
       <van-cell title="Vuex" />
       <van-cell title="Axios封装及接口状态码判断" />
       <van-cell title="Vant组件按需加载" />
-      <van-cell title="Sass变量及全局样式" />
+      <van-cell title="tailwindcss" />
       <van-cell title="NProgress.js进度条" />
       <van-cell title="js-cookie存取cookie" />
       <van-cell title="jsencrypt加密" />
@@ -27,14 +27,9 @@
 
 <script>
 import { mapActions } from 'vuex'
-import { Image, Cell, CellGroup } from 'vant'
 export default {
   name: 'Index',
-  components: {
-    [Image.name]:Image,
-    [Cell.name]:Cell,
-    [CellGroup.name]:CellGroup
-  },
+  components: {},
   props: {},
   data() {
     return {
@@ -56,22 +51,11 @@ export default {
 <style scoped lang='scss'>
 @import '_s/variables';
 .home {
-  padding: 10px 10px 80px 10px;
   h1 {
     background: url('~@/assets/images/logo.png') no-repeat;
     background-size: 2.2rem;
     background-position: 0 .3rem;
     padding-left: 3rem;
-  }
-  h3 {
-    color: $gray-6;
-  }
-  .van-cell-group  {
-    margin-top: 1.5rem;
-    .van-cell {
-      font-size: 1rem;
-      color: $gray-8;
-    }
   }
 }
 </style>

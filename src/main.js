@@ -2,11 +2,12 @@ import Vue from 'vue'
 import App from './App.vue'
 import router from './router'
 import store from './store'
+import '@/plugins/vant.js'
 import { __ctx } from '@/config'
 
 import 'animate.css'
 
-import '@/assets/styles/index.scss'
+import '@/styles/tailwind.css'
 
 Vue.prototype.$__ctx = __ctx
 
