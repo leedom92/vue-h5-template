@@ -7,7 +7,7 @@
     <h1 class="py-2">
       <span>VUE H5 开发模版</span>
     </h1>
-    <h3 class="text-gray-600 py-4 text-2xl">A vue h5 template width vant ui</h3>
+    <h3 class="text-gray-600 py-4 text-2xl">A vue h5 template with vant ui</h3>
     <br>
     <van-cell-group>
       <van-cell title="Vue CLI 4" />
