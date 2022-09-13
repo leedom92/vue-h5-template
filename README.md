@@ -7,13 +7,13 @@
 ## Installation
 
 ```bash
-git clone https://github.com/leedom92/vue-h5-template.git
+npx degit leedom92/vue-h5-template your-project-name
 
-cd vue-h5-template
+cd your-project-name
 
-npm install
+yarn install
 
-npm run serve
+yarn serve
 ```
 
 ## Thanks
