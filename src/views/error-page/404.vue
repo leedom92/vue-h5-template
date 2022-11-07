@@ -4,7 +4,7 @@
 
 <template>
   <div class="no-page">
-    <div class="d-flex flex-column jc-center ai-center animate__animated animate__backInDown">
+    <div class="flex flex-col justify-center items-center animate__animated animate__backInDown">
       <h1>404</h1>
       <p >
         {{ time }}秒后回到首页
