@@ -5,7 +5,7 @@
 <template>
   <van-tabbar route>
     <template v-for="(item, $index) in routes">
-      <van-tabbar-item v-if="item.meta.show"  :key="$index" replace :to="item.path" :icon="item.meta.icon">{{ item.meta.title }}</van-tabbar-item>
+      <van-tabbar-item :key="$index" replace :to="item.path" :icon="item.meta.icon">{{ item.meta.title }}</van-tabbar-item>
     </template>
   </van-tabbar>
 </template>

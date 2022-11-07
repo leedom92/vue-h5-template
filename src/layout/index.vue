@@ -23,7 +23,7 @@ export default {
   props: {},
   data() {
     return {
-      routeList: basicRoutes[0].children
+      routeList: basicRoutes[0].children.filter(v => v.meta.show)
     }
   },
   watch: {},
