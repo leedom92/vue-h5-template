@@ -1,29 +1,21 @@
-# vue-project
+# vue-h5-template
+🍰Vue移动端项目模版 Vite + Vue Router + Vuex + Vant + Sass + NProgress
 
-This template should help get you started developing with Vue 3 in Vite.
+## Demo
+[The Demo](https://leedom.me/vue-h5-template/)
 
-## Recommended IDE Setup
+## Installation
 
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur) + [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin).
+```bash
+npx degit leedom92/vue-h5-template your-project-name
 
-## Customize configuration
+cd your-project-name
 
-See [Vite Configuration Reference](https://vitejs.dev/config/).
+pnpm install
 
-## Project Setup
-
-```sh
-npm install
+pnpm serve
 ```
 
-### Compile and Hot-Reload for Development
+## License
 
-```sh
-npm run dev
-```
-
-### Compile and Minify for Production
-
-```sh
-npm run build
-```
+[MIT](https://github.com/leedom92/vue-h5-template/blob/master/LICENSE)
