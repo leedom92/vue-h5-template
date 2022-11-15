@@ -25,5 +25,6 @@ export default defineConfig({
       '_i': fileURLToPath(new URL('./src/assets/images', import.meta.url)),
       '_u': fileURLToPath(new URL('./src/utils', import.meta.url)),
     }
-  }
+  },
+  base: './'
 })

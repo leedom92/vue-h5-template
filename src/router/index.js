@@ -22,7 +22,7 @@ export const routes = [...basicRoutes, ...constantRoutes]
 
 const router = new VueRouter({
   // mode: 'history',
-  base: import.meta.env.BASE_URL,
+  // base: import.meta.env.BASE_URL,
   routes,
   scrollBehavior: () => ({ y: 0 })
 })

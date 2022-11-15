@@ -24,9 +24,7 @@ export default {
     }
   },
   watch: {},
-  created() {
-    console.log('this.$route :>> ', this.$route);
-  },
+  created() {},
   mounted() {},
   methods: {}
 }
