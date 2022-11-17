@@ -7,13 +7,14 @@
 ## Installation
 
 ```bash
-npx degit leedom92/vue-h5-template your-project-name
+git clone https://github.com/leedom92/vue-h5-template.git -b vue-h5-webpack-template --single-branch
+# remember removing the .git
 
-cd your-project-name
+cd vue-h5-template
 
-yarn install
+pnpm install
 
-yarn serve
+pnpm serve
 ```
 
 ## Thanks
