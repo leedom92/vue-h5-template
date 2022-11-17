@@ -7,9 +7,13 @@
 ## Installation
 
 ```bash
-npx degit leedom92/vue-h5-template your-project-name
+# git clone, then remove the .git
+git clone https://github.com/leedom92/vue-h5-template.git
 
-cd your-project-name
+# or you can use degit, .git is removed automatically
+npx degit leedom92/vue-h5-template vue-h5-template
+
+cd vue-h5-template
 
 pnpm install
 
