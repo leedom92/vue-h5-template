@@ -21,6 +21,12 @@ export const basicRoutes = [
         name: 'CenterView',
         component: () => import('@/views/center/index.vue'),
         meta: { title: '关于', icon: 'user-o', keepAlive: true, show: true }
+      },
+      {
+        path: '/vue',
+        name: 'VueView',
+        component: () => import('@/views/vue/index.vue'),
+        meta: { title: 'Vue', icon: '' }
       }
     ]
   }

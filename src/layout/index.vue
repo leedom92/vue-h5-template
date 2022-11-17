@@ -6,31 +6,30 @@
       <router-view class="animate__animated animate__fadeIn" />
     </keep-alive>
     <router-view class="animate__animated animate__fadeIn" v-else />
-    <tab-bar :routes="routeList" />
+    <tab-bar v-if="$route.meta.show" :routes="routeList" />
   </div>
 </template>
 
 <script>
-import TabBar from '_c/TabBar/index.vue'
-import { basicRoutes } from '@/router/router.config'
+import TabBar from "_c/TabBar/index.vue";
+import { basicRoutes } from "@/router/router.config";
 export default {
-  name: 'Layout',
+  name: "Layout",
   components: {
-    TabBar
+    TabBar,
   },
   props: {},
   data() {
     return {
-      routeList: basicRoutes[0].children.filter(v => v.meta.show)
-    }
+      routeList: basicRoutes[0].children.filter((v) => v.meta.show),
+    };
   },
   watch: {},
   created() {},
   mounted() {},
-  methods: {}
-}
+  methods: {},
+};
 </script>
 
 <style scoped lang='scss'>
-
 </style>

@@ -5,13 +5,14 @@
     <h1 class="py-2">
       <span>VUE H5 开发模版</span>
     </h1>
-    <h3 class="text-gray-600 py-4 text-2xl">A vue h5 template with vite & vant ui</h3>
+    <h3 class="text-gray-600 py-4 text-2xl">A vue h5 template with vite & vant</h3>
     <br>
     <van-cell-group>
-      <van-cell title="Vue2" />
+      <van-cell title="Vue2" to="vue" />
       <van-cell title="Vite" />
       <van-cell title="Vue Router" />
       <van-cell title="Vant组件按需加载" />
+      <van-cell title="Sass" />
       <van-cell title="Tailwindcss" />
       <van-cell title="NProgress.js进度条" />
       <van-cell title="animate.css动画库" />
