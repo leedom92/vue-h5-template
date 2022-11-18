@@ -21,18 +21,18 @@ pnpm serve
 ```
 ## <span id="todo-list">Todo List</span>
 
-- [x] [Vue 2.7+](https://v2.vuejs.org/) ✔
-- [x] [Vite](https://vitejs.dev/) ✔
-- [x] [Vue Router](https://router.vuejs.org/) ✔
-- [x] [Vant](https://vant-contrib.gitee.io/vant/v2/#/zh-CN/) ✔
-  - [x] [组件按需加载](#unplugin-vue-components) ✔
-- [x] [Tailwindcss](https://tailwindcss.com/) ✔
-- [x] [NProgress.js进度条](https://github.com/rstacruz/nprogress) ✔
+- [x] Vue 2.7+
+- [x] Vite
+- [x] Vue Router
+- [x] Vant
+  - [x] [组件按需加载](#unplugin-vue-components)
+- [x] Tailwindcss
+- [x] NProgress.js进度条
   - [x] [NProgress颜色自定义](#nprogress)
-- [x] [animate.css动画库](https://animate.style/) ✔
-- [x] Sass ✔
-- [x] [alias别名](#alias) ✔
-- [ ] [Pinia](https://pinia.vuejs.org/)
+- [x] animate.css动画库
+- [x] Sass
+- [x] [alias别名](#alias)
+- [ ] Pinia
 - [ ] Axios封装
 - [ ] 统一开发规范
 - [ ] 打包删除console.log打印
@@ -41,7 +41,7 @@ pnpm serve
 ### <span id="unplugin-vue-components">组件按需加载</span>
 1. 安装插件
 ``` sh
-# 通过 pnpm 安装
+# 通过 pnpm 安装 unplugin-vue-components
 pnpm add unplugin-vue-components -D
 ```
 
