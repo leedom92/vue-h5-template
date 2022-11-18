@@ -19,22 +19,72 @@ pnpm install
 
 pnpm serve
 ```
-## Todo List
+## <span id="todo-list">Todo List</span>
 
-- [x] [Vue2](https://v2.vuejs.org/) ✔
+- [x] [Vue 2.7+](https://v2.vuejs.org/) ✔
 - [x] [Vite](https://vitejs.dev/) ✔
 - [x] [Vue Router](https://router.vuejs.org/) ✔
 - [x] [Vant](https://vant-contrib.gitee.io/vant/v2/#/zh-CN/) ✔
-  - [x] [组件按需加载](https://vant-contrib.gitee.io/vant/#/zh-CN/quickstart#fang-fa-er.-an-xu-yin-ru-zu-jian-yang-shi) ✔
+  - [x] [组件按需加载](#unplugin-vue-components) ✔
 - [x] [Tailwindcss](https://tailwindcss.com/) ✔
 - [x] [NProgress.js进度条](https://github.com/rstacruz/nprogress) ✔
 - [x] [animate.css动画库](https://animate.style/) ✔
 - [x] Sass ✔
-- [x] alias别名 ✔
+- [x] [alias别名](#alias) ✔
 - [ ] [Pinia](https://pinia.vuejs.org/)
 - [ ] Axios封装
 - [ ] 统一开发规范
 - [ ] 打包删除console.log打印
+
+
+### <span id="unplugin-vue-components">✔ 组件按需加载</span>
+1. 安装插件
+``` sh
+# 通过 pnpm 安装
+pnpm add unplugin-vue-components -D
+```
+
+2. 配置插件
+```js
+import vue from '@vitejs/plugin-vue';
+import Components from 'unplugin-vue-components/vite';
+import { VantResolver } from 'unplugin-vue-components/resolvers';
+
+export default {
+  plugins: [
+    vue(),
+    Components({
+      resolvers: [VantResolver()],
+    }),
+  ],
+};
+
+```
+
+**[return todo list](#todo-list)**
+
+### <span id="alias">✔ alias别名</span>
+
+``` js
+// vite.config.js
+import { fileURLToPath, URL } from 'node:url'
+import { defineConfig } from 'vite'
+
+// https://vitejs.dev/config/
+export default defineConfig({
+  resolve: {
+    alias: {
+      '@': fileURLToPath(new URL('./src', import.meta.url)),
+      '_c': fileURLToPath(new URL('./src/components', import.meta.url)),
+      '_i': fileURLToPath(new URL('./src/assets/images', import.meta.url)),
+      '_u': fileURLToPath(new URL('./src/utils', import.meta.url)),
+    }
+  }
+})
+
+```
+
+**[return todo list](#todo-list)**
 
 ## License
 
