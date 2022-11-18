@@ -28,6 +28,7 @@ pnpm serve
   - [x] [组件按需加载](#unplugin-vue-components) ✔
 - [x] [Tailwindcss](https://tailwindcss.com/) ✔
 - [x] [NProgress.js进度条](https://github.com/rstacruz/nprogress) ✔
+  - [x] [NProgress颜色自定义](#nprogress)
 - [x] [animate.css动画库](https://animate.style/) ✔
 - [x] Sass ✔
 - [x] [alias别名](#alias) ✔
@@ -37,7 +38,7 @@ pnpm serve
 - [ ] 打包删除console.log打印
 
 
-### <span id="unplugin-vue-components">✔ 组件按需加载</span>
+### <span id="unplugin-vue-components">组件按需加载</span>
 1. 安装插件
 ``` sh
 # 通过 pnpm 安装
@@ -61,9 +62,21 @@ export default {
 
 ```
 
-**[return todo list](#todo-list)**
+**[🔝 return todo list](#todo-list)**
 
-### <span id="alias">✔ alias别名</span>
+### <span id="nprogress">NProgress颜色自定义</span>
+
+``` css
+/* assets/styles/vars.css 修改颜色即可 */
+:root {
+  --nprogress-color: red;
+}
+
+```
+
+**[🔝 return todo list](#todo-list)**
+
+### <span id="alias">alias别名</span>
 
 ``` js
 // vite.config.js
@@ -84,7 +97,7 @@ export default defineConfig({
 
 ```
 
-**[return todo list](#todo-list)**
+**[🔝 return todo list](#todo-list)**
 
 ## License
 
