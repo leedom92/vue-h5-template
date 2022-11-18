@@ -69,7 +69,7 @@ export default {
 ``` css
 /* assets/styles/vars.css 修改颜色即可 */
 :root {
-  --nprogress-color: red;
+  --nprogress-color: #40b982;
 }
 
 ```
