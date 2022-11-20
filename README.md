@@ -1,5 +1,5 @@
 # vue-h5-template
-🍰Vue移动端项目模版 Vite + Vue Router + Vuex + Vant + Sass + NProgress
+🍰Vue移动端项目模版 Vite + Vue Router + Vuex + Vant + Sass + NProgress + Eslint + Prettier
 
 ## Demo
 [The Demo](https://leedom.me/vue-h5-template/)
