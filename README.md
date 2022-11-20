@@ -11,7 +11,7 @@
 git clone https://github.com/leedom92/vue-h5-template.git
 
 # or you can use degit, .git is removed automatically
-npx degit leedom92/vue-h5-template vue-h5-template
+degit leedom92/vue-h5-template vue-h5-template
 
 cd vue-h5-template
 
@@ -33,7 +33,7 @@ pnpm serve
 - [x] Sass
 - [x] [alias别名](#alias)
 - [ ] Pinia
-- [ ] Axios封装
+- [x] [Axios封装](#axios)
 - [x] [Eslint + Prettier 统一开发规范](#standard)
 - [ ] 打包删除console.log打印
 
@@ -94,6 +94,52 @@ export default defineConfig({
     }
   }
 })
+
+```
+
+**[🔝 return todo list](#todo-list)**
+
+### <span id="axios">Axios封装</span>
+
+``` js
+// src/utils/request.js
+service.interceptors.request.use( // 请求拦截器
+  (config) => {
+
+    // headers中加入token验证
+    config.headers['Authorization'] = ''
+
+    return config
+  },
+  (error) => {
+    return Promise.reject(error)
+  }
+)
+
+service.interceptors.response.use( // 响应拦截器
+  (response) => {
+    const res = response.data
+    // 根据接口返回的状态码判断
+    if (+res.code === 200) {
+      return res
+    } else {
+      ...
+    }
+  },
+  (error) => {
+    ...
+  }
+)
+
+// src/api/*.js
+export function login(params) {
+  return request({
+    loading: true, // 是否显示loading
+    url: '/login', // 接口地址
+    methods: 'post', // 请求方式
+    params // 请求参数
+  })
+}
 
 ```
 
