@@ -41,6 +41,9 @@ service.interceptors.request.use(
         duration: 0 // 时长(ms)为0时，toast不会消失
       })
     }
+
+    config.headers['Authorization'] = ''
+
     return config
   },
   (error) => {
