@@ -6,7 +6,7 @@
       <span>VUE H5 开发模版</span>
     </h1>
     <h3 class="text-gray-600 py-4 text-2xl">A vue h5 template with vite & vant</h3>
-    <br>
+    <br />
     <van-cell-group>
       <van-cell title="Vue2" to="vue" />
       <van-cell title="Vite" />
@@ -48,7 +48,7 @@ export default {
   h1 {
     background: url('@/assets/images/logo.png') no-repeat;
     background-size: 2.2rem;
-    background-position: 0 .3rem;
+    background-position: 0 0.3rem;
     padding-left: 3rem;
   }
 }

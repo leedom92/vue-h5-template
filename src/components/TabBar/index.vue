@@ -2,15 +2,23 @@
 
 <template>
   <van-tabbar v-model="active">
-    <template v-for="(item, $index) in routes">
-      <van-tabbar-item :key="$index" replace :name="item.name" :to="item.path" :icon="item.meta.icon">{{ item.meta.title }}</van-tabbar-item>
+    <template>
+      <van-tabbar-item
+        v-for="(item, $index) in routes"
+        :key="$index"
+        replace
+        :name="item.name"
+        :to="item.path"
+        :icon="item.meta.icon"
+        >{{ item.meta.title }}</van-tabbar-item
+      >
     </template>
   </van-tabbar>
 </template>
 
 <script>
 export default {
-  name: 'Index',
+  name: 'TabBar',
   components: {},
   props: {
     routes: {
@@ -30,6 +38,4 @@ export default {
 }
 </script>
 
-<style scoped lang='scss'>
-
-</style>
+<style scoped lang="scss"></style>

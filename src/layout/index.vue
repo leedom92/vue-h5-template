@@ -11,25 +11,24 @@
 </template>
 
 <script>
-import TabBar from "_c/TabBar/index.vue";
-import { basicRoutes } from "@/router/router.config";
+import TabBar from '_c/TabBar/index.vue'
+import { basicRoutes } from '@/router/router.config'
 export default {
-  name: "Layout",
+  name: 'LayoutComponent',
   components: {
-    TabBar,
+    TabBar
   },
   props: {},
   data() {
     return {
-      routeList: basicRoutes[0].children.filter((v) => v.meta.show),
-    };
+      routeList: basicRoutes[0].children.filter((v) => v.meta.show)
+    }
   },
   watch: {},
   created() {},
   mounted() {},
-  methods: {},
-};
+  methods: {}
+}
 </script>
 
-<style scoped lang='scss'>
-</style>
+<style scoped lang="scss"></style>
