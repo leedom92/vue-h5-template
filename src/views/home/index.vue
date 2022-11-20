@@ -24,6 +24,7 @@
 </template>
 
 <script>
+import { login } from '_a/user'
 export default {
   name: 'HomeComponent',
   components: {},
@@ -35,17 +36,14 @@ export default {
   computed: {},
   watch: {},
   created() {
-    //
+    login({ username: 'leedom', code: '6666' })
   },
-  mounted() {
-    //
-  },
+  mounted() {},
   methods: {}
 }
 </script>
 
 <style scoped lang="scss">
-// css
 .home :deep() {
   h1 {
     background: url('@/assets/images/logo.png') no-repeat;
