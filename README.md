@@ -34,7 +34,7 @@ pnpm serve
 - [x] [alias别名](#alias)
 - [ ] Pinia
 - [ ] Axios封装
-- [x] eslint+prettier统一开发规范[#standard]
+- [x] [eslint+prettier统一开发规范](#standard)
 - [ ] 打包删除console.log打印
 
 
@@ -101,7 +101,7 @@ export default defineConfig({
 
 ### <span id="standard">eslint+prettier统一开发规范</span>
 
-``` json
+``` js
 // .prettierrc 可自定义规则
 {
   "semi": false, // 句尾添加分号
