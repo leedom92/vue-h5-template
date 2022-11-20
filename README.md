@@ -34,7 +34,7 @@ pnpm serve
 - [x] [alias别名](#alias)
 - [ ] Pinia
 - [ ] Axios封装
-- [ ] 统一开发规范
+- [x] eslint+prettier统一开发规范[#standard]
 - [ ] 打包删除console.log打印
 
 
@@ -95,6 +95,21 @@ export default defineConfig({
   }
 })
 
+```
+
+**[🔝 return todo list](#todo-list)**
+
+### <span id="standard">eslint+prettier统一开发规范</span>
+
+``` json
+// .prettierrc 可自定义规则
+{
+  "semi": false, // 句尾添加分号
+  "tabWidth": 2, // 缩进字节数
+  "singleQuote": true, // 使用单引号代替双引号
+  "printWidth": 100, // 超过最大值换行
+  "trailingComma": "none" // 在对象或数组最后一个元素后面是否加逗号
+}
 ```
 
 **[🔝 return todo list](#todo-list)**
