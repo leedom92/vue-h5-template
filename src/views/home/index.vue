@@ -17,6 +17,8 @@
       <van-cell title="NProgress.js进度条" />
       <van-cell title="animate.css动画库" />
       <van-cell title="alias别名" />
+      <van-cell title="Eslint" />
+      <van-cell title="Prettier" />
     </van-cell-group>
   </div>
 </template>
