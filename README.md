@@ -62,7 +62,7 @@ export default {
 
 ```
 
-**[🔝 return todo list](#todo-list)**
+**[🔝](#todo-list)**
 
 ### <span id="nprogress">NProgress颜色自定义</span>
 
@@ -74,7 +74,7 @@ export default {
 
 ```
 
-**[🔝 return todo list](#todo-list)**
+**[🔝](#todo-list)**
 
 ### <span id="alias">alias别名</span>
 
@@ -97,7 +97,7 @@ export default defineConfig({
 
 ```
 
-**[🔝 return todo list](#todo-list)**
+**[🔝](#todo-list)**
 
 ### <span id="axios">Axios封装</span>
 
@@ -143,7 +143,7 @@ export function login(params) {
 
 ```
 
-**[🔝 return todo list](#todo-list)**
+**[🔝](#todo-list)**
 
 ### <span id="standard">Eslint + Prettier 统一开发规范</span>
 
@@ -158,7 +158,7 @@ export function login(params) {
 }
 ```
 
-**[🔝 return todo list](#todo-list)**
+**[🔝](#todo-list)**
 
 ## License
 
