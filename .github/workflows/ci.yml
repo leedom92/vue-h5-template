@@ -21,24 +21,13 @@ jobs:
         # 拉取代码
         uses: actions/checkout@v3
 
-      - name: Build and Deploy
-        # 构建发布 Github pages
+      - name: Install and Build 🔧 # This example project is built using npm and outputs the result to the 'build' folder. Replace with the commands required to build your project, or remove this step entirely if your site is pre-built.
+        run: |
+          npm ci
+          npm run build
+
+      - name: Deploy 🚀
         uses: JamesIves/github-pages-deploy-action@v4
         with:
-          branch: releases/v4
-          folder: .
-          clean: false
-          single-commit: true
-        # 该步骤所需的环境变量
-        env:
-          ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
-          # 在部署前要checkout的基本分支，默认是master
-          BASE_BRANCH: master # The branch the action should deploy from.
-          # 指定部署的分支，默认是 gh-pages 分支
-          BRANCH: gh-pages # The branch the action should deploy to.
-          # 存储库中要部署的文件夹。
-          # 该步骤会将项目中 FOLDER 指定文件夹下的文件推送到 BRANCH 分支，作为Github Pages 部署的内容。
-          # Vue CLI默认打包到 dist 目录
-          FOLDER: dist # The folder the action should deploy.
-          # 在向 BRANCH 分支推送代码前，可以指定构建脚本
-          BUILD_SCRIPT: npm install && npm run build # The build script the action should run prior to deploying.
+          branch: gh-pages
+          folder: dist # The folder the action should deploy.
