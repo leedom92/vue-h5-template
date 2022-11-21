@@ -27,5 +27,8 @@ export default defineConfig({
       _u: fileURLToPath(new URL('./src/utils', import.meta.url))
     }
   },
-  base: './'
+  base: './',
+  server: {
+    open: true
+  }
 })
