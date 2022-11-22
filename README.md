@@ -144,6 +144,12 @@ export function login(params) {
 ### <span id="standard">Eslint + Prettier 统一开发规范</span>
 
 ``` js
+// .eslintrc.cjs 可自定义规则
+module.exports = {
+  rules: {
+    'no-debugger': 'off'
+  }
+}
 
 // .prettierrc 可自定义规则
 {
