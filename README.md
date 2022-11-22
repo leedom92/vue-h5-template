@@ -31,7 +31,7 @@ pnpm serve
 - [ ] Pinia
 - [x] [Axios封装](#axios)
 - [x] [Eslint + Prettier 统一开发规范](#standard)
-- [ ] 打包删除console.log打印
+- [x] [打包移除console和debugger](#drop)
 
 
 ### <span id="unplugin-vue-components">组件按需加载</span>
@@ -144,6 +144,7 @@ export function login(params) {
 ### <span id="standard">Eslint + Prettier 统一开发规范</span>
 
 ``` js
+
 // .prettierrc 可自定义规则
 {
   "semi": false, // 句尾添加分号
@@ -152,6 +153,40 @@ export function login(params) {
   "printWidth": 100, // 超过最大值换行
   "trailingComma": "none" // 在对象或数组最后一个元素后面是否加逗号
 }
+```
+
+**[🔝](#todo-list)**
+
+### <span id="drop">打包移除console和debugger</span>
+
+``` js
+/**
+ * vite.config.js
+ * 打包默认使用 'esbuild'， 可选 'terser'
+ * 有以下两种方法可在生产环境移除console和debugger
+ */
+
+// 1. build via esbuild
+export default defineConfig(({ command }) => {
+  return {
+    esbuild: {
+      drop: command === 'build' ? ['console', 'debugger'] : []
+    }
+  }
+})
+
+// 2. build via terser
+export default defineConfig({
+  build: {
+    minify: 'terser',
+    terserOptions: {
+      compress: {
+        drop_console: true,
+        drop_debugger: true,
+      }
+    }
+  }
+})
 ```
 
 **[🔝](#todo-list)**
