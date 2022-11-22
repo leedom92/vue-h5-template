@@ -27,16 +27,10 @@ export default {
   },
   computed: {},
   watch: {},
-  created() {
-    //
-  },
-  mounted() {
-    //
-  },
+  created() {},
+  mounted() {},
   methods: {}
 }
 </script>
 
-<style scoped lang="scss">
-// css
-</style>
+<style scoped lang="scss"></style>

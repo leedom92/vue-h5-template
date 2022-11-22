@@ -9,5 +9,8 @@ module.exports = {
     browser: true,
     commonjs: true,
     amd: true
+  },
+  rules: {
+    'no-debugger': 'off'
   }
 }
