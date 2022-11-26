@@ -7,6 +7,8 @@ on:
   push:
     branches:
       - master
+    paths:   # 这里是用来指定哪个文件更改，才会触发的
+      - 'src/**'
 # 工作流执行的一个或多个任务
 jobs:
   # 任务名称
