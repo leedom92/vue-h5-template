@@ -9,11 +9,14 @@
 ## Installation
 
 ```bash
-git clone https://github.com/leedom92/vue-h5-template.git
+# If you don't have degit installed, run: npm install -g degit.
+# .git folder is removed automatically
+# When clone complete, .github folder needs to be removed manually
+npx degit leedom92/vue-h5-template vue-h5-template 
 
 cd vue-h5-template
 
-pnpm install
+pnpm i # If you don't have pnpm installed, run: npm install -g pnpm
 
 pnpm serve
 ```
