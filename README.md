@@ -4,7 +4,7 @@
 若您习惯 `webpack` 开发，请[戳这里](https://github.com/leedom92/vue-h5-template/tree/vue-h5-webpack-template)传送
 
 ## Demo
-[The Demo](https://leedom.me/vue-h5-template/)
+[Click here](https://leedom.me/vue-h5-template/)
 
 ## Installation
 
