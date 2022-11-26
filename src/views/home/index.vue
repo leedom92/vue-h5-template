@@ -9,11 +9,11 @@
     <br />
     <van-cell-group>
       <van-cell title="Vue2" to="vue" />
-      <van-cell title="Vite" />
+      <van-cell title="Vite" url="https://cn.vitejs.dev" />
       <van-cell title="Vue Router" />
-      <van-cell title="Vant组件按需加载" />
+      <van-cell title="Vant组件按需加载" url="https://vant-contrib.gitee.io/vant/v2/#/zh-CN/" />
       <van-cell title="Sass" />
-      <van-cell title="Tailwindcss" />
+      <van-cell title="Tailwindcss" url="https://tailwindcss.com" />
       <van-cell title="NProgress.js进度条" />
       <van-cell title="animate.css动画库" />
       <van-cell title="alias别名" />
