@@ -2,9 +2,7 @@
 
 <template>
   <div class="center">
-    <div
-      class="animate__animated animate__bounce flex flex-col justify-center items-center min-h-screen"
-    >
+    <div class="flex flex-col justify-center items-center min-h-screen">
       <img class="w-20" :src="require('_i/logo.png')" alt="" />
       <h2 class="p-4 text-gray-800">VUE H5 开发模版</h2>
       <p class="text-center text-gray-500">

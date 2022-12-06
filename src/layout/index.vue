@@ -3,9 +3,9 @@
 <template>
   <div>
     <keep-alive v-if="$route.meta.keepAlive">
-      <router-view class="animate__animated animate__fadeIn" />
+      <router-view />
     </keep-alive>
-    <router-view class="animate__animated animate__fadeIn" v-else />
+    <router-view v-else />
     <tab-bar v-if="$route.meta.show" :routes="routeList" />
   </div>
 </template>

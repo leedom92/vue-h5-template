@@ -1,7 +1,7 @@
 /** * Created by Leedom on 2022-11-16 01:14:18 */
 
 <template>
-  <div class="home p-4 animate__animated animate__fadeInDown">
+  <div class="home p-4">
     <h1 class="py-2">
       <span>VUE H5 开发模版</span>
     </h1>
@@ -15,7 +15,6 @@
       <van-cell title="Sass" />
       <van-cell title="Tailwindcss" url="https://tailwindcss.com" />
       <van-cell title="NProgress.js进度条" />
-      <van-cell title="animate.css动画库" />
       <van-cell title="alias别名" />
       <van-cell title="Eslint + Prettier" />
     </van-cell-group>

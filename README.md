@@ -30,7 +30,7 @@ pnpm serve
 - [x] Tailwindcss
 - [x] NProgress.js进度条
   - [x] [NProgress颜色自定义](#nprogress)
-- [x] animate.css动画库
+- ~~animate.css动画库~~
 - [x] Sass
 - [x] [alias别名](#alias)
 - [ ] Pinia
@@ -38,6 +38,8 @@ pnpm serve
 - [x] [Eslint + Prettier 统一开发规范](#standard)
 - [x] [打包移除console和debugger](#drop)
 
+> 去掉了 `animate.css` 依赖，我觉得该动画库对页面而言只是锦上添花，该项目作为模版，无需过多的可有可无的功能。
+> 若页面跳转需要有过渡效果，可以一用。
 
 ### <span id="unplugin-vue-components">组件按需加载</span>
 1. 安装插件

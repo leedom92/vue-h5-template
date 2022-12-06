@@ -2,7 +2,7 @@
 
 <template>
   <div class="vue h-screen flex flex-col items-center justify-center">
-    <img class="w-32 animate__animated animate__rubberBand" src="@/assets/logo.svg" alt="" />
+    <img class="w-32" src="@/assets/logo.svg" alt="" />
     <div class="mt-6">
       <a
         class="text-2xl text-green-700"
