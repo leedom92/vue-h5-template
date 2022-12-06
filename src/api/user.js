@@ -4,7 +4,7 @@ export function login(params) {
   return request({
     loading: true,
     url: '/login',
-    methods: 'post',
+    method: 'post',
     params
   })
 }
