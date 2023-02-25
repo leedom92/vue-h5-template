@@ -12,7 +12,7 @@
     "js-cookie": "^3.0.1",
     "nprogress": "^0.2.0",
     "vant": "^2.12.52",
-    "vue": "^3.2.47",
+    "vue": "^2.7.7",
     "vue-router": "^3.5.4"
   },
   "devDependencies": {
