@@ -141,7 +141,7 @@ export function login(params) {
     loading: true, // 是否显示loading
     url: '/login', // 接口地址
     methods: 'post', // 请求方式
-    params // 请求参数
+    ...params // 请求参数
   })
 }
 
