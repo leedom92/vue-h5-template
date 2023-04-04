@@ -27,6 +27,10 @@ jobs:
         # 使用的操作 actions，可以使用公共仓库，本地仓库，别人的仓库的action
         # 拉取代码
         uses: actions/checkout@v3
+      - name: Use pnpm 📦
+      - uses: pnpm/action-setup@v2
+        with:
+          version: 8
 
       # 此示例项目使用pnpm构建，并将结果输出到“dist”文件夹。将其替换为你生成项目所需的命令，若你的网站是预生成的，则完全可以删除此步骤。
       - name: Install and Build 🔧
