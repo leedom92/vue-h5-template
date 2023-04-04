@@ -26,6 +26,7 @@ module.exports = {
     config.optimization.minimizer[0].options.terserOptions.compress.drop_console = process.env.NODE_ENV === 'production'
   },
   devServer: {
+    host: process.env.HOST || '127.0.0.1',
     port: 9527,
     open: true,
     inline: true
