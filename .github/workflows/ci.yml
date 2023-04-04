@@ -27,8 +27,10 @@ jobs:
         # 使用的操作 actions，可以使用公共仓库，本地仓库，别人的仓库的action
         # 拉取代码
         uses: actions/checkout@v3
+
+      # 使用pnpm打包  
       - name: Use pnpm 📦
-      - uses: pnpm/action-setup@v2
+        uses: pnpm/action-setup@v2
         with:
           version: 8
 
