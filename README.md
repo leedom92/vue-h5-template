@@ -18,7 +18,7 @@ cd vue-h5-template
 
 pnpm i # If you don't have pnpm installed, run: npm install -g pnpm
 
-pnpm serve
+pnpm dev
 ```
 ## <span id="todo-list">Todo List</span>
 
