@@ -23,5 +23,3 @@ pnpm-debug.log*
 *.sw?
 
 deploy.sh
-
-*.lock
