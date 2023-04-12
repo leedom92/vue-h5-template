@@ -6,19 +6,20 @@
       <img class="w-20" :src="require('_i/logo.png')" alt="" />
       <h2 class="p-4 text-gray-800">VUE H5 开发模版</h2>
       <p class="text-center text-gray-500">
-        项目地址：<a
-          href="https://github.com/leedom92/vue-h5-template"
-          target="_blank"
-          rel="noopener noreferrer"
-          >https://github.com/leedom92/vue-h5-template</a
-        >
+        项目地址：<a :href="homepage" target="_blank" rel="noopener noreferrer">{{ homepage }}</a>
       </p>
-      <p class="text-gray-500 p-4">项目作者：Leedom</p>
+      <p class="text-gray-500 p-4">
+        <span @click="changeName">项目作者</span>：
+        <a :href="github" target="_blank" rel="noopener noreferrer">{{ author }}</a>
+      </p>
     </div>
   </div>
 </template>
 
 <script>
+import { mapState, mapActions } from 'pinia'
+import { useUserStore } from '@/store/user'
+
 export default {
   name: 'CenterComponent',
   components: {},
@@ -27,11 +28,15 @@ export default {
   data() {
     return {}
   },
-  computed: {},
+  computed: {
+    ...mapState(useUserStore, ['author', 'github', 'homepage'])
+  },
   watch: {},
   created() {},
   mounted() {},
-  methods: {}
+  methods: {
+    ...mapActions(useUserStore, ['changeName'])
+  }
 }
 </script>
 
