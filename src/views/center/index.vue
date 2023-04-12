@@ -9,7 +9,7 @@
         项目地址：<a :href="homepage" target="_blank" rel="noopener noreferrer">{{ homepage }}</a>
       </p>
       <p class="text-gray-500 p-4">
-        <span @click="changeName">项目作者</span>：
+        <span @click="greet">项目作者</span>：
         <a :href="github" target="_blank" rel="noopener noreferrer">{{ author }}</a>
       </p>
     </div>
@@ -35,7 +35,7 @@ export default {
   created() {},
   mounted() {},
   methods: {
-    ...mapActions(useUserStore, ['changeName'])
+    ...mapActions(useUserStore, ['greet'])
   }
 }
 </script>
