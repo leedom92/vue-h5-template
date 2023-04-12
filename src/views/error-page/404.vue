@@ -16,18 +16,22 @@ export default {
   props: {},
   data() {
     return {
+      inter: null,
       time: 5
     }
   },
   watch: {},
   created() {},
   mounted() {
-    setInterval(() => {
+    this.inter = setInterval(() => {
       this.time--
       if (this.time === 0) {
         this.returnHome()
       }
     }, 1000)
+  },
+  destroyed() {
+    clearInterval(this.inter)
   },
   methods: {
     returnHome() {
