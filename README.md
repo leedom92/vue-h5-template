@@ -25,6 +25,7 @@ pnpm dev
 - [x] Vue 2.7+
 - [x] Vite
 - [x] Vue Router
+- [x] Pinia
 - [x] Vant
   - [x] [组件按需加载](#unplugin-vue-components)
 - [x] Tailwindcss
@@ -33,7 +34,6 @@ pnpm dev
 - ~~animate.css动画库~~
 - [x] Sass
 - [x] [alias别名](#alias)
-- [x] Pinia
 - [x] [Axios封装](#axios)
 - [x] [Eslint + Prettier 统一开发规范](#standard)
 - [x] [打包移除console和debugger](#drop)

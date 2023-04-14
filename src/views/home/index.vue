@@ -9,8 +9,9 @@
     <br />
     <van-cell-group>
       <van-cell title="Vue2" to="vue" />
-      <van-cell title="Vite" url="https://cn.vitejs.dev" />
-      <van-cell title="Vue Router" />
+      <van-cell title="Vite" url="https://vitejs.dev" />
+      <van-cell title="Vue Router" url="https://router.vuejs.org" />
+      <van-cell title="Pinia" url="https://pinia.vuejs.org" />
       <van-cell title="Vant组件按需加载" url="https://vant-contrib.gitee.io/vant/v2/#/zh-CN/" />
       <van-cell title="Sass" />
       <van-cell title="Tailwindcss" url="https://tailwindcss.com" />
