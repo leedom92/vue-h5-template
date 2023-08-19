@@ -5,6 +5,6 @@ export function login(params) {
     loading: true,
     url: '/login',
     method: 'post',
-    params
+    params,
   })
 }

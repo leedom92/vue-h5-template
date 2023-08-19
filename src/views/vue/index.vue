@@ -2,17 +2,27 @@
 
 <template>
   <div class="vue h-screen flex flex-col items-center justify-center">
-    <img class="w-32" src="@/assets/logo.svg" alt="" />
+    <img
+      class="w-32"
+      src="@/assets/logo.svg"
+      alt=""
+    >
     <div class="mt-6">
       <a
         class="text-2xl text-green-700"
         href="https://vuejs.org"
         target="_blank"
         rel="noopener noreferrer"
-        >Vue</a
-      >
+      >Vue</a>
     </div>
-    <van-button class="mt-6" plain type="primary" @click="$router.push('/')">返回首页</van-button>
+    <van-button
+      class="mt-6"
+      plain
+      type="primary"
+      @click="$router.push('/')"
+    >
+      返回首页
+    </van-button>
   </div>
 </template>
 
@@ -29,7 +39,7 @@ export default {
   watch: {},
   created() {},
   mounted() {},
-  methods: {}
+  methods: {},
 }
 </script>
 

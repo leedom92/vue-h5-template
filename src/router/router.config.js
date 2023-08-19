@@ -14,20 +14,20 @@ export const basicRoutes = [
         path: '/',
         name: 'HomeView',
         component: () => import('@/views/home/index.vue'),
-        meta: { title: '首页', icon: 'wap-home-o', keepAlive: true, show: true }
+        meta: { title: '首页', icon: 'wap-home-o', keepAlive: true, show: true },
       },
       {
         path: '/center',
         name: 'CenterView',
         component: () => import('@/views/center/index.vue'),
-        meta: { title: '关于', icon: 'user-o', keepAlive: true, show: true }
+        meta: { title: '关于', icon: 'user-o', keepAlive: true, show: true },
       },
       {
         path: '/vue',
         name: 'VueView',
         component: () => import('@/views/vue/index.vue'),
-        meta: { title: 'Vue', icon: '' }
-      }
-    ]
-  }
+        meta: { title: 'Vue', icon: '' },
+      },
+    ],
+  },
 ]

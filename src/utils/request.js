@@ -19,7 +19,7 @@ const codeMessage = {
   500: '服务器发生错误，请检查服务器。',
   502: '网关错误。',
   503: '服务不可用，服务器暂时过载或维护。',
-  504: '网关超时。'
+  504: '网关超时。',
 }
 
 const baseURL = ''
@@ -28,7 +28,7 @@ const baseURL = ''
 const service = axios.create({
   baseURL, // 接口地址
   // withCredentials: true, // 跨域请求时携带cookie
-  timeout: 10000 // 超时时间
+  timeout: 10000, // 超时时间
 })
 
 // 请求拦截器
@@ -39,7 +39,7 @@ service.interceptors.request.use(
       // loading
       Toast.loading({
         forbidClick: true,
-        duration: 0 // 时长(ms)为0时，toast不会消失
+        duration: 0, // 时长(ms)为0时，toast不会消失
       })
     }
 
@@ -47,9 +47,7 @@ service.interceptors.request.use(
 
     return config
   },
-  (error) => {
-    return Promise.reject(error)
-  }
+  error => Promise.reject(error),
 )
 
 // 响应拦截器
@@ -75,6 +73,6 @@ service.interceptors.response.use(
       Notify({ type: 'danger', message: '您的网络发生异常，无法连接服务器' })
     }
     return Promise.reject(error)
-  }
+  },
 )
 export default service

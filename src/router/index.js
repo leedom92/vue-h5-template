@@ -12,10 +12,10 @@ Vue.use(VueRouter)
 export const constantRoutes = [
   {
     path: '/404',
-    component: () => import('@/views/error-page/404.vue')
+    component: () => import('@/views/error-page/404.vue'),
   },
   // 404 page must be placed at the end !!!
-  { path: '*', redirect: '/404' }
+  { path: '*', redirect: '/404' },
 ]
 
 export const routes = [...basicRoutes, ...constantRoutes]
@@ -24,7 +24,7 @@ const router = new VueRouter({
   // mode: 'history',
   // base: import.meta.env.BASE_URL,
   routes,
-  scrollBehavior: () => ({ y: 0 })
+  scrollBehavior: () => ({ z: 0 }),
 })
 
 router.beforeEach((to, from, next) => {

@@ -17,7 +17,7 @@ export default {
   data() {
     return {
       inter: null,
-      time: 5
+      time: 5,
     }
   },
   watch: {},
@@ -36,8 +36,8 @@ export default {
   methods: {
     returnHome() {
       this.$router.replace('/')
-    }
-  }
+    },
+  },
 }
 </script>
 

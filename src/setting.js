@@ -5,6 +5,6 @@ export default {
   // 公司信息
   company: {
     name: 'Leedom',
-    url: 'https://leedom.me'
-  }
+    url: 'https://leedom.me',
+  },
 }

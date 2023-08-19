@@ -1,9 +1,11 @@
 # vue-h5-template
+
 🍰「Vue移动端项目模版」Vite + Vue Router + Vant + Tailwindcss + Sass + NProgress + Eslint + Prettier
 
 若您习惯 `webpack` 开发，请[戳这里](https://github.com/leedom92/vue-h5-template/tree/vue-h5-webpack-template)传送
 
 ## Demo
+
 [Click here](https://vue-h5-template.netlify.app)
 
 ## Installation
@@ -20,6 +22,7 @@ pnpm i # If you don't have pnpm installed, run: npm install -g pnpm
 
 pnpm dev
 ```
+
 ## <span id="todo-list">Todo List</span>
 
 - [x] Vue 2.7+
@@ -35,20 +38,23 @@ pnpm dev
 - [x] Sass
 - [x] [alias别名](#alias)
 - [x] [Axios封装](#axios)
-- [x] [Eslint + Prettier 统一开发规范](#standard)
+- [x] [ESlint](#standard)
 - [x] [打包移除console和debugger](#drop)
 
 > 去掉了 `animate.css` 依赖，我觉得该动画库对页面而言只是锦上添花，该项目作为模版，无需过多的可有可无的功能。
 > 若页面跳转需要有过渡效果，可以一用。
 
 ### <span id="unplugin-vue-components">组件按需加载</span>
+
 1. 安装插件
+
 ``` sh
 # 通过 pnpm 安装 unplugin-vue-components
 pnpm add unplugin-vue-components -D
 ```
 
-2. 配置插件
+1. 配置插件
+
 ```js
 import vue from '@vitejs/plugin-vue';
 import Components from 'unplugin-vue-components/vite';
@@ -149,23 +155,18 @@ export function login(params) {
 
 **[🔝](#todo-list)**
 
-### <span id="standard">Eslint + Prettier 统一开发规范</span>
+### <span id="standard">ESlint 统一开发规范</span>
+
+> 使用 [`@leedomjs/eslint-config`](https://www.npmjs.com/package/@leedomjs/eslint-config) 作为ESlint默认配置
 
 ``` js
 // .eslintrc.cjs 可自定义规则
 module.exports = {
+  extends: "@leedomjs"
+  // 自定义规则
   rules: {
-    'no-debugger': 'off'
+    
   }
-}
-
-// .prettierrc 可自定义规则
-{
-  "semi": false, // 句尾添加分号
-  "tabWidth": 2, // 缩进字节数
-  "singleQuote": true, // 使用单引号代替双引号
-  "printWidth": 100, // 超过最大值换行
-  "trailingComma": "none" // 在对象或数组最后一个元素后面是否加逗号
 }
 ```
 

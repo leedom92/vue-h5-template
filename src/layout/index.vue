@@ -6,7 +6,10 @@
       <router-view />
     </keep-alive>
     <router-view v-else />
-    <tab-bar v-if="$route.meta.show" :routes="routeList" />
+    <tab-bar
+      v-if="$route.meta.show"
+      :routes="routeList"
+    />
   </div>
 </template>
 
@@ -16,18 +19,18 @@ import { basicRoutes } from '@/router/router.config'
 export default {
   name: 'LayoutComponent',
   components: {
-    TabBar
+    TabBar,
   },
   props: {},
   data() {
     return {
-      routeList: basicRoutes[0].children.filter((v) => v.meta.show)
+      routeList: basicRoutes[0].children.filter(v => v.meta.show),
     }
   },
   watch: {},
   created() {},
   mounted() {},
-  methods: {}
+  methods: {},
 }
 </script>
 

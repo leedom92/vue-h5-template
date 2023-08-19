@@ -2,17 +2,14 @@
 
 <template>
   <van-tabbar v-model="active">
-    <template>
-      <van-tabbar-item
-        v-for="(item, $index) in routes"
-        :key="$index"
-        replace
-        :name="item.name"
-        :to="item.path"
-        :icon="item.meta.icon"
-        >{{ item.meta.title }}</van-tabbar-item
-      >
-    </template>
+    <van-tabbar-item
+      v-for="(item, $index) in routes"
+      :key="$index"
+      replace
+      :name="item.name"
+      :to="item.path"
+      :icon="item.meta.icon"
+    >{{ item.meta.title }}</van-tabbar-item>
   </van-tabbar>
 </template>
 
@@ -23,18 +20,18 @@ export default {
   props: {
     routes: {
       type: Array,
-      default: () => []
-    }
+      default: () => [],
+    },
   },
   data() {
     return {
-      active: this.$route.name
+      active: this.$route.name,
     }
   },
   watch: {},
-  created() {},
-  mounted() {},
-  methods: {}
+  created() { },
+  mounted() { },
+  methods: {},
 }
 </script>
 
