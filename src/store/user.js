@@ -6,7 +6,7 @@ export const useUserStore = defineStore('user', {
     author: 'Leedom',
   }),
   getters: {
-    name: state => state.author.toLocaleLowerCase() + '92',
+    name: state => `${state.author.toLocaleLowerCase()}92`,
     github() {
       return `https://github.com/${this.name}`
     },

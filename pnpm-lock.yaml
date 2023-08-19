@@ -25,8 +25,8 @@ dependencies:
 
 devDependencies:
   '@leedomjs/eslint-config':
-    specifier: ^0.2.1
-    version: 0.2.1(eslint@8.47.0)
+    specifier: ^0.3.0
+    version: 0.3.0(eslint@8.47.0)
   '@vitejs/plugin-legacy':
     specifier: ^4.0.2
     version: 4.0.2(terser@5.16.8)(vite@4.2.1)
@@ -1518,20 +1518,20 @@ packages:
       '@jridgewell/sourcemap-codec': 1.4.14
     dev: true
 
-  /@leedomjs/eslint-config-basic@0.2.1(eslint@8.47.0):
-    resolution: {integrity: sha512-ax/V5vS5gx7oPMJ53gtXoQYTe5Ahp8B3625CONvmJrXQzt2jgxM80RzhhCz0fNNuh94XOKGuBs0+SD0QsjmYdg==}
+  /@leedomjs/eslint-config-basic@0.3.0(eslint@8.47.0):
+    resolution: {integrity: sha512-5sysCm0qzh+7XuvOEfdMBfjd0csUEYT2JyzTIa9hpKu58lmcowuXHNWpdu4/utvLqepNnCHFw9+gUnZa55c5jw==}
     peerDependencies:
       eslint: '>=7.4.0'
     dependencies:
       eslint: 8.47.0
     dev: true
 
-  /@leedomjs/eslint-config-vue@0.2.1(eslint@8.47.0):
-    resolution: {integrity: sha512-4EuSJwlVX0b+ET7r00oVyfk8fekxakbto1MXf/8qujvxwUwlMO02a+JMNyOZqF8SDY+yt0ZrJPgcC2K7pFg0uA==}
+  /@leedomjs/eslint-config-vue@0.3.0(eslint@8.47.0):
+    resolution: {integrity: sha512-S5/9qHzROXBDE21Wrl3GeKVuz9iUk9r3+BASkaZDmuP+wp5kwN2jNvPOfrvcUv1EXwj+gyxIgnT0wOhic6mRbg==}
     peerDependencies:
       eslint: '>=7.4.0'
     dependencies:
-      '@leedomjs/eslint-config-basic': 0.2.1(eslint@8.47.0)
+      '@leedomjs/eslint-config-basic': 0.3.0(eslint@8.47.0)
       eslint: 8.47.0
       eslint-plugin-vue: 9.17.0(eslint@8.47.0)
       local-pkg: 0.4.3
@@ -1539,12 +1539,12 @@ packages:
       - supports-color
     dev: true
 
-  /@leedomjs/eslint-config@0.2.1(eslint@8.47.0):
-    resolution: {integrity: sha512-Yy2LODDadB8kopahE1sP2Se+Yf1elqNy/soa0IccXDZUXWIHHfMxEwOK9DmyT6cUEoCzQH8FhJrBH9dogxpirQ==}
+  /@leedomjs/eslint-config@0.3.0(eslint@8.47.0):
+    resolution: {integrity: sha512-R2ZAYo5Gh/DzPRCRSxs5w0OP63dfKu5WMU5YTKlbXOFpysOwL8TiJnegZqnDvcLsgKu4JquGE8rFS8MzGUmfpg==}
     peerDependencies:
       eslint: '>=7.4.0'
     dependencies:
-      '@leedomjs/eslint-config-vue': 0.2.1(eslint@8.47.0)
+      '@leedomjs/eslint-config-vue': 0.3.0(eslint@8.47.0)
       eslint: 8.47.0
     transitivePeerDependencies:
       - supports-color
