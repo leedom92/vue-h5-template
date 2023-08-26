@@ -1,12 +1,12 @@
-{ 
+{
   "compilerOptions": {
     "baseUrl": "./",
     "paths": {
-        "@/*": ["src/*"],
-        "_a/*": ["src/api/*"],
-        "_c/*": ["src/components/*"],
-        "_i/*": ["src/assets/images/*"],
-        "_u/*": ["src/utils/*"],
+      "@/*": ["src/*"],
+      "_a/*": ["src/api/*"],
+      "_c/*": ["src/components/*"],
+      "_i/*": ["src/assets/images/*"],
+      "_u/*": ["src/utils/*"]
     }
   },
   "exclude": ["node_modules", "dist"]

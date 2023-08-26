@@ -1,5 +1,22 @@
 /** * Created by Leedom on 2022-11-17 07:49:19 */
 
+<script>
+export default {
+  name: 'VueComponent',
+  components: {},
+  mixins: [],
+  props: {},
+  data() {
+    return {}
+  },
+  computed: {},
+  watch: {},
+  created() {},
+  mounted() {},
+  methods: {},
+}
+</script>
+
 <template>
   <div class="vue h-screen flex flex-col items-center justify-center">
     <img
@@ -25,22 +42,3 @@
     </van-button>
   </div>
 </template>
-
-<script>
-export default {
-  name: 'VueComponent',
-  components: {},
-  mixins: [],
-  props: {},
-  data() {
-    return {}
-  },
-  computed: {},
-  watch: {},
-  created() {},
-  mounted() {},
-  methods: {},
-}
-</script>
-
-<style scoped lang="scss"></style>

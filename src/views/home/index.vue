@@ -1,5 +1,25 @@
 /** * Created by Leedom on 2022-11-16 01:14:18 */
 
+<script>
+import { login } from '_a/user'
+export default {
+  name: 'HomeComponent',
+  components: {},
+  mixins: [],
+  props: {},
+  data() {
+    return {}
+  },
+  computed: {},
+  watch: {},
+  created() {
+    login({ username: 'leedom', code: '6666' })
+  },
+  mounted() {},
+  methods: {},
+}
+</script>
+
 <template>
   <div class="home p-4">
     <h1 class="py-2">
@@ -41,26 +61,6 @@
     </van-cell-group>
   </div>
 </template>
-
-<script>
-import { login } from '_a/user'
-export default {
-  name: 'HomeComponent',
-  components: {},
-  mixins: [],
-  props: {},
-  data() {
-    return {}
-  },
-  computed: {},
-  watch: {},
-  created() {
-    login({ username: 'leedom', code: '6666' })
-  },
-  mounted() {},
-  methods: {},
-}
-</script>
 
 <style scoped lang="scss">
 .home :deep() {

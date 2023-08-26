@@ -25,8 +25,8 @@ dependencies:
 
 devDependencies:
   '@leedomjs/eslint-config':
-    specifier: ^0.3.0
-    version: 0.3.0(eslint@8.47.0)
+    specifier: ^0.7.0
+    version: 0.7.0(eslint@8.47.0)
   '@vitejs/plugin-legacy':
     specifier: ^4.0.2
     version: 4.0.2(terser@5.16.8)(vite@4.2.1)
@@ -1518,20 +1518,22 @@ packages:
       '@jridgewell/sourcemap-codec': 1.4.14
     dev: true
 
-  /@leedomjs/eslint-config-basic@0.3.0(eslint@8.47.0):
-    resolution: {integrity: sha512-5sysCm0qzh+7XuvOEfdMBfjd0csUEYT2JyzTIa9hpKu58lmcowuXHNWpdu4/utvLqepNnCHFw9+gUnZa55c5jw==}
+  /@leedomjs/eslint-config-basic@0.7.0(eslint@8.47.0):
+    resolution: {integrity: sha512-HIS4it3SH8t3ajtMQiHtfNz2BwPQVV68/E8guojcR/KDwogCV04klFAKRMzrzoz5wmO9fvEPiEsi3c+lYKn3Mw==}
     peerDependencies:
       eslint: '>=7.4.0'
     dependencies:
       eslint: 8.47.0
+      eslint-plugin-jsonc: 2.9.0(eslint@8.47.0)
+      jsonc-eslint-parser: 2.3.0
     dev: true
 
-  /@leedomjs/eslint-config-vue@0.3.0(eslint@8.47.0):
-    resolution: {integrity: sha512-S5/9qHzROXBDE21Wrl3GeKVuz9iUk9r3+BASkaZDmuP+wp5kwN2jNvPOfrvcUv1EXwj+gyxIgnT0wOhic6mRbg==}
+  /@leedomjs/eslint-config-vue@0.7.0(eslint@8.47.0):
+    resolution: {integrity: sha512-aLWCJy0GHLeGmiGbTpvSfWVpnwasz4f3zULDiV5dFdSijwAdw91i9gcIKNlMayLmduvz1q0wD7UnpJ/vR9Cl9w==}
     peerDependencies:
       eslint: '>=7.4.0'
     dependencies:
-      '@leedomjs/eslint-config-basic': 0.3.0(eslint@8.47.0)
+      '@leedomjs/eslint-config-basic': 0.7.0(eslint@8.47.0)
       eslint: 8.47.0
       eslint-plugin-vue: 9.17.0(eslint@8.47.0)
       local-pkg: 0.4.3
@@ -1539,12 +1541,12 @@ packages:
       - supports-color
     dev: true
 
-  /@leedomjs/eslint-config@0.3.0(eslint@8.47.0):
-    resolution: {integrity: sha512-R2ZAYo5Gh/DzPRCRSxs5w0OP63dfKu5WMU5YTKlbXOFpysOwL8TiJnegZqnDvcLsgKu4JquGE8rFS8MzGUmfpg==}
+  /@leedomjs/eslint-config@0.7.0(eslint@8.47.0):
+    resolution: {integrity: sha512-hSPw1QLCybcvTSQzojm8rlCIltldfrIGrRn3AeVU0NeTu00WgdHhWGaA1/Gz05NuAZO9OUFwMPPtqcVH0jqWSw==}
     peerDependencies:
       eslint: '>=7.4.0'
     dependencies:
-      '@leedomjs/eslint-config-vue': 0.3.0(eslint@8.47.0)
+      '@leedomjs/eslint-config-vue': 0.7.0(eslint@8.47.0)
       eslint: 8.47.0
     transitivePeerDependencies:
       - supports-color
@@ -2036,6 +2038,18 @@ packages:
     engines: {node: '>=10'}
     dev: true
 
+  /eslint-plugin-jsonc@2.9.0(eslint@8.47.0):
+    resolution: {integrity: sha512-RK+LeONVukbLwT2+t7/OY54NJRccTXh/QbnXzPuTLpFMVZhPuq1C9E07+qWenGx7rrQl0kAalAWl7EmB+RjpGA==}
+    engines: {node: ^12.22.0 || ^14.17.0 || >=16.0.0}
+    peerDependencies:
+      eslint: '>=6.0.0'
+    dependencies:
+      '@eslint-community/eslint-utils': 4.4.0(eslint@8.47.0)
+      eslint: 8.47.0
+      jsonc-eslint-parser: 2.3.0
+      natural-compare: 1.4.0
+    dev: true
+
   /eslint-plugin-vue@9.17.0(eslint@8.47.0):
     resolution: {integrity: sha512-r7Bp79pxQk9I5XDP0k2dpUC7Ots3OSWgvGZNu3BxmKK6Zg7NgVtcOB6OCna5Kb9oQwJPl5hq183WD0SY5tZtIQ==}
     engines: {node: ^14.17.0 || >=16.0.0}
@@ -2431,6 +2445,16 @@ packages:
     resolution: {integrity: sha512-XmOWe7eyHYH14cLdVPoyg+GOH3rYX++KpzrylJwSW98t3Nk+U8XOl8FWKOgwtzdb8lXGf6zYwDUzeHMWfxasyg==}
     engines: {node: '>=6'}
     hasBin: true
+    dev: true
+
+  /jsonc-eslint-parser@2.3.0:
+    resolution: {integrity: sha512-9xZPKVYp9DxnM3sd1yAsh/d59iIaswDkai8oTxbursfKYbg/ibjX0IzFt35+VZ8iEW453TVTXztnRvYUQlAfUQ==}
+    engines: {node: ^12.22.0 || ^14.17.0 || >=16.0.0}
+    dependencies:
+      acorn: 8.10.0
+      eslint-visitor-keys: 3.4.3
+      espree: 9.6.1
+      semver: 7.5.4
     dev: true
 
   /levn@0.4.1:

@@ -1,5 +1,29 @@
 /** * Created by Leedom on 2022-11-16 01:15:00 */
 
+<script>
+import { mapState, mapActions } from 'pinia'
+import { useUserStore } from '@/store/user'
+
+export default {
+  name: 'CenterComponent',
+  components: {},
+  mixins: [],
+  props: {},
+  data() {
+    return {}
+  },
+  computed: {
+    ...mapState(useUserStore, ['author', 'github', 'homepage']),
+  },
+  watch: {},
+  created() {},
+  mounted() {},
+  methods: {
+    ...mapActions(useUserStore, ['greet']),
+  },
+}
+</script>
+
 <template>
   <div class="center">
     <div class="flex flex-col justify-center items-center min-h-screen">
@@ -29,29 +53,3 @@
     </div>
   </div>
 </template>
-
-<script>
-import { mapState, mapActions } from 'pinia'
-import { useUserStore } from '@/store/user'
-
-export default {
-  name: 'CenterComponent',
-  components: {},
-  mixins: [],
-  props: {},
-  data() {
-    return {}
-  },
-  computed: {
-    ...mapState(useUserStore, ['author', 'github', 'homepage']),
-  },
-  watch: {},
-  created() {},
-  mounted() {},
-  methods: {
-    ...mapActions(useUserStore, ['greet']),
-  },
-}
-</script>
-
-<style scoped lang="scss"></style>
