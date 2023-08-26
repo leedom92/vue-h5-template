@@ -1,5 +1,5 @@
 # vue-h5-template
-🍰Vue移动端项目模版 Vue CLI 4 + Vue Router + Vuex + Vant + Sass + NProgress + js-cookie + jsencrypt
+🍰Vue移动端项目模版 Vue CLI 4 + Vue Router + Vuex + Vant + Sass + NProgress + js-cookie + jsencrypt + ESLint
 
 ## Demo
 [The Demo](https://leedom.me/vue-h5-template/)
