@@ -5,7 +5,7 @@ export function login(params) {
     loading: true,
     url: '/login',
     methods: 'post',
-    params
+    params,
   })
 }
 
@@ -13,6 +13,6 @@ export function getUserInfo(params) {
   return request({
     url: '/userInfo',
     method: 'post',
-    params
+    params,
   })
 }

@@ -40,7 +40,7 @@ export function parseTime(time, cFormat) {
     h: date.getHours(),
     i: date.getMinutes(),
     s: date.getSeconds(),
-    a: date.getDay()
+    a: date.getDay(),
   }
   const time_str = format.replace(/{([ymdhisa])+}/g, (result, key) => {
     const value = formatObj[key]
@@ -66,7 +66,7 @@ export function currentTime(date, type) {
   } else if (type === 'hms') {
     return [hour, minute, second].map(formatNumber).join(':')
   }
-  return [year, month, day].map(formatNumber).join('/') + ' ' + [hour, minute, second].map(formatNumber).join(':')
+  return `${[year, month, day].map(formatNumber).join('/')} ${[hour, minute, second].map(formatNumber).join(':')}`
 }
 
 /**
@@ -74,7 +74,7 @@ export function currentTime(date, type) {
  */
 export function formatNumber(n) {
   n = n.toString()
-  return n[1] ? n : '0' + n
+  return n[1] ? n : `0${n}`
 }
 
 /**
@@ -83,7 +83,7 @@ export function formatNumber(n) {
  * @returns {string}
  */
 export function formatTime(time, option) {
-  if (('' + time).length === 10) {
+  if ((`${time}`).length === 10) {
     time = parseInt(time) * 1000
   } else {
     time = +time
@@ -97,9 +97,9 @@ export function formatTime(time, option) {
     return '刚刚'
   } else if (diff < 3600) {
     // less 1 hour
-    return Math.ceil(diff / 60) + '分钟前'
+    return `${Math.ceil(diff / 60)}分钟前`
   } else if (diff < 3600 * 24) {
-    return Math.ceil(diff / 3600) + '小时前'
+    return `${Math.ceil(diff / 3600)}小时前`
   } else if (diff < 3600 * 24 * 2) {
     return '1天前'
   }
@@ -107,15 +107,15 @@ export function formatTime(time, option) {
     return parseTime(time, option)
   } else {
     return (
-      d.getMonth() +
-      1 +
-      '月' +
-      d.getDate() +
-      '日' +
-      d.getHours() +
-      '时' +
-      d.getMinutes() +
-      '分'
+      `${d.getMonth() +
+      1
+      }月${
+        d.getDate()
+      }日${
+        d.getHours()
+      }时${
+        d.getMinutes()
+      }分`
     )
   }
 }
@@ -146,7 +146,7 @@ export function getQueryObject(url) {
 export function byteLength(str) {
   // returns the byte length of an utf8 string
   let s = str.length
-  for (var i = str.length - 1; i >= 0; i--) {
+  for (let i = str.length - 1; i >= 0; i--) {
     const code = str.charCodeAt(i)
     if (code > 0x7f && code <= 0x7ff) s++
     else if (code > 0x7ff && code <= 0xffff) s += 2
@@ -176,10 +176,10 @@ export function cleanArray(actual) {
 export function param(json) {
   if (!json) return ''
   return cleanArray(
-    Object.keys(json).map(key => {
+    Object.keys(json).map((key) => {
       if (json[key] === undefined) return ''
-      return encodeURIComponent(key) + '=' + encodeURIComponent(json[key])
-    })
+      return `${encodeURIComponent(key)}=${encodeURIComponent(json[key])}`
+    }),
   ).join('&')
 }
 
@@ -194,7 +194,7 @@ export function param2Obj(url) {
   }
   const obj = {}
   const searchArr = search.split('&')
-  searchArr.forEach(v => {
+  searchArr.forEach((v) => {
     const index = v.indexOf('=')
     if (index !== -1) {
       const name = v.substring(0, index)
@@ -228,7 +228,7 @@ export function objectMerge(target, source) {
   if (Array.isArray(source)) {
     return source.slice()
   }
-  Object.keys(source).forEach(property => {
+  Object.keys(source).forEach((property) => {
     const sourceProperty = source[property]
     if (typeof sourceProperty === 'object') {
       target[property] = objectMerge(target[property], sourceProperty)
@@ -250,7 +250,7 @@ export function toggleClass(element, className) {
   let classString = element.className
   const nameIndex = classString.indexOf(className)
   if (nameIndex === -1) {
-    classString += '' + className
+    classString += `${className}`
   } else {
     classString =
       classString.substr(0, nameIndex) +
@@ -324,7 +324,7 @@ export function deepClone(source) {
     throw new Error('error arguments', 'deepClone')
   }
   const targetObj = source.constructor === Array ? [] : {}
-  Object.keys(source).forEach(keys => {
+  Object.keys(source).forEach((keys) => {
     if (source[keys] && typeof source[keys] === 'object') {
       targetObj[keys] = deepClone(source[keys])
     } else {
@@ -346,8 +346,8 @@ export function uniqueArr(arr) {
  * @returns {string}
  */
 export function createUniqueString() {
-  const timestamp = +new Date() + ''
-  const randomNum = parseInt((1 + Math.random()) * 65536) + ''
+  const timestamp = `${+new Date()}`
+  const randomNum = `${parseInt((1 + Math.random()) * 65536)}`
   return (+(randomNum + timestamp)).toString(32)
 }
 
@@ -358,7 +358,7 @@ export function createUniqueString() {
  * @returns {boolean}
  */
 export function hasClass(ele, cls) {
-  return !!ele.className.match(new RegExp('(\\s|^)' + cls + '(\\s|$)'))
+  return !!ele.className.match(new RegExp(`(\\s|^)${cls}(\\s|$)`))
 }
 
 /**
@@ -367,7 +367,7 @@ export function hasClass(ele, cls) {
  * @param {string} cls
  */
 export function addClass(ele, cls) {
-  if (!hasClass(ele, cls)) ele.className += ' ' + cls
+  if (!hasClass(ele, cls)) ele.className += ` ${cls}`
 }
 
 /**
@@ -377,7 +377,7 @@ export function addClass(ele, cls) {
  */
 export function removeClass(ele, cls) {
   if (hasClass(ele, cls)) {
-    const reg = new RegExp('(\\s|^)' + cls + '(\\s|$)')
+    const reg = new RegExp(`(\\s|^)${cls}(\\s|$)`)
     ele.className = ele.className.replace(reg, ' ')
   }
 }

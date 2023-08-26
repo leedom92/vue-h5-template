@@ -1,8 +1,6 @@
 const defaultSetting = require('./src/setting')
 const path = require('path')
-const resolve = dir => {
-  return path.join(__dirname, dir)
-}
+const resolve = dir => path.join(__dirname, dir)
 const name = defaultSetting.systemName
 
 module.exports = {
@@ -10,7 +8,7 @@ module.exports = {
   outputDir: 'dist',
   assetsDir: 'static',
   productionSourceMap: false,
-  chainWebpack: config => {
+  chainWebpack: (config) => {
     config.resolve.alias
       .set('@', resolve('src'))
       .set('_a', resolve('src/api'))
@@ -26,9 +24,8 @@ module.exports = {
     config.optimization.minimizer[0].options.terserOptions.compress.drop_console = process.env.NODE_ENV === 'production'
   },
   devServer: {
-    host: process.env.HOST || '127.0.0.1',
     port: 9527,
     open: true,
-    inline: true
-  }
-};
+    inline: true,
+  },
+}

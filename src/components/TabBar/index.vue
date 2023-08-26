@@ -2,36 +2,40 @@
 * Created by leedom on 2021-04-30 14:58:53
 */
 
-<template>
-  <van-tabbar v-model="active">
-    <template v-for="(item, $index) in routes">
-      <van-tabbar-item :key="$index" replace :name="item.name" :to="item.path" :icon="item.meta.icon">{{ item.meta.title }}</van-tabbar-item>
-    </template>
-  </van-tabbar>
-</template>
-
 <script>
 export default {
-  name: 'Index',
+  name: 'TabBar',
   components: {},
   props: {
     routes: {
       type: Array,
-      default: () => []
-    }
+      default: () => [],
+    },
   },
   data() {
     return {
-      active: this.$route.name
+      active: this.$route.name,
     }
   },
   watch: {},
   created() {},
   mounted() {},
-  methods: {}
+  methods: {},
 }
 </script>
 
-<style scoped lang='scss'>
-
-</style>
+<template>
+  <van-tabbar v-model="active">
+    <template v-for="(item, $index) in routes">
+      <van-tabbar-item
+        :key="$index"
+        replace
+        :name="item.name"
+        :to="item.path"
+        :icon="item.meta.icon"
+      >
+        {{ item.meta.title }}
+      </van-tabbar-item>
+    </template>
+  </van-tabbar>
+</template>

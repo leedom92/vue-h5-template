@@ -4,7 +4,7 @@ module.exports = {
 
   // 公司信息
   company: {
-    name: 'Leedom', 
-    url: 'https://leedom.me'
-  }
+    name: 'Leedom',
+    url: 'https://leedom.me',
+  },
 }

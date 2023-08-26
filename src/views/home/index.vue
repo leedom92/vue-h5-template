@@ -2,12 +2,37 @@
 * Created by leedom on 2021-04-30 14:02:46
 */
 
+<script>
+import { mapActions } from 'vuex'
+export default {
+  name: 'HomePage',
+  components: {},
+  props: {},
+  data() {
+    return {
+    }
+  },
+  watch: {},
+  created() {
+    this.login({ account: 'leedom', password: '123456', code: '6666' })
+  },
+  mounted() {},
+  methods: {
+    ...mapActions([
+      'login',
+    ]),
+  },
+}
+</script>
+
 <template>
   <div class="home p-4 animate__animated animate__fadeInDown">
     <h1 class="py-2">
       <span>VUE H5 开发模版</span>
     </h1>
-    <h3 class="text-gray-600 py-4 text-2xl">A vue h5 template with vant ui</h3>
+    <h3 class="text-gray-600 py-4 text-2xl">
+      A vue h5 template with vant ui
+    </h3>
     <br>
     <van-cell-group>
       <van-cell title="Vue CLI 4" />
@@ -24,29 +49,6 @@
     </van-cell-group>
   </div>
 </template>
-
-<script>
-import { mapActions } from 'vuex'
-export default {
-  name: 'Index',
-  components: {},
-  props: {},
-  data() {
-    return {
-    }
-  },
-  watch: {},
-  created() {
-    this.login({ account: 'leedom', password: '123456', code: '6666' })
-  },
-  mounted() {},
-  methods: {
-    ...mapActions([
-      'login'
-    ])
-  }
-}
-</script>
 
 <style scoped lang='scss'>
 @import '_s/variables';

@@ -10,46 +10,46 @@ Vue.use(Vuex)
 export default new Vuex.Store({
   state: {
     token: getToken(),
-    userid: null
+    userid: null,
   },
   mutations: {
     [SET_TOKEN](state, token) {
       state.token = token
-    }, 
+    },
     [SET_USERID](state, userid) {
       state.userid = userid
-    } 
+    },
   },
   actions: {
     login({ commit }, userInfo) {
       const { account, password, code } = userInfo
       return new Promise((resolve, reject) => {
-        login({ 
-          account: encryptedData(account.trim()), 
-          password: encryptedData(password.trim()), 
-          code: code.trim() 
-        }).then(res => {
+        login({
+          account: encryptedData(account.trim()),
+          password: encryptedData(password.trim()),
+          code: code.trim(),
+        }).then((res) => {
           const { token } = res.data
           commit(SET_TOKEN, token)
           setToken(token)
           resolve(res)
-        }).catch(err => {
+        }).catch((err) => {
           reject(err)
         })
       })
     },
     getUserInfo({ commit }) {
       return new Promise((resolve, reject) => {
-        getUserInfo({ system: 'sc' }).then(res => {
+        getUserInfo({ system: 'sc' }).then((res) => {
           const { user } = res.data
           commit(SET_USERID, user.userId)
           setUserId(user.userId)
           resolve(res)
-        }).catch(err => {
+        }).catch((err) => {
           reject(err)
         })
       })
-    }
+    },
   },
-  getters
+  getters,
 })

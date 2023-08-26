@@ -8,7 +8,7 @@ import {
 } from 'vant'
 
 Vue.use(Tabbar)
-   .use(TabbarItem)
-   .use(Cell)
-   .use(CellGroup)
-   .use(Image)
+  .use(TabbarItem)
+  .use(Cell)
+  .use(CellGroup)
+  .use(Image)

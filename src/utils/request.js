@@ -20,24 +20,24 @@ const codeMessage = {
   502: '网关错误。',
   503: '服务不可用，服务器暂时过载或维护。',
   504: '网关超时。',
-};
+}
 
 // 创建axios实例
 const service = axios.create({
   baseURL, // 接口地址
   // withCredentials: true, // 跨域请求时携带cookie
-  timeout: 10000 // 超时时间
+  timeout: 10000, // 超时时间
 })
 
 // 请求拦截器
 service.interceptors.request.use(
-  config => {
+  (config) => {
     // 是否开启loading
     if (config.loading) {
       // loading
       Toast.loading({
         forbidClick: true,
-        duration: 0 // 时长(ms)为0时，toast不会消失
+        duration: 0, // 时长(ms)为0时，toast不会消失
       })
     }
     // 如果store中有token，则在请求头中加入token
@@ -46,34 +46,32 @@ service.interceptors.request.use(
     }
     return config
   },
-  error => {
-    return Promise.reject(error)
-  }
+  error => Promise.reject(error),
 )
 
 // 响应拦截器
 service.interceptors.response.use(
-  response => {
+  (response) => {
     const res = response.data
-    if (res.code == 200) {
+    if (res.code === 200) {
       return res
     } else {
       Toast.clear()
-      Notify({ type: 'danger', message: res.msg });
+      Notify({ type: 'danger', message: res.msg })
       return Promise.reject(new Error(res.msg || 'Error'))
     }
   },
-  error => {
+  (error) => {
     Toast.clear()
     const { response } = error
     if (response && response.status) {
-      const errorText = codeMessage[response.status] || response.statusText;
-      const { status } = response;
-      Notify({ type: 'danger', message: `请求错误 ${status}: ${errorText}` });
+      const errorText = codeMessage[response.status] || response.statusText
+      const { status } = response
+      Notify({ type: 'danger', message: `请求错误 ${status}: ${errorText}` })
     } else if (!response) {
-      Notify({ type: 'danger', message: '您的网络发生异常，无法连接服务器' });
+      Notify({ type: 'danger', message: '您的网络发生异常，无法连接服务器' })
     }
     return Promise.reject(error)
-  }
+  },
 )
 export default service

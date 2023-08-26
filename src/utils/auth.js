@@ -22,8 +22,8 @@ export function getUserId() {
 
 /**
  * 字段加密
- * @param {*} field 
- * @returns 
+ * @param {*} field
+ * @returns
  */
 export function encryptedData(field) {
   // 自己的公钥

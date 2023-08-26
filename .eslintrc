@@ -1,0 +1,6 @@
+{
+  "extends":"@leedomjs",
+  "parserOptions": {
+    "parser": "@babel/eslint-parser"
+  }
+}
