@@ -13,7 +13,7 @@
     "prepare": "husky install"
   },
   "lint-staged": {
-    "*": "eslint ."
+    "src/**/*.{js,vue}": "eslint --fix"
   },
   "dependencies": {
     "animate.css": "^4.1.1",
