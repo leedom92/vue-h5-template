@@ -1,22 +1,22 @@
 import { fileURLToPath, URL } from 'node:url'
 
 import { defineConfig } from 'vite'
-import legacy from '@vitejs/plugin-legacy'
-import vue2 from '@vitejs/plugin-vue2'
+import vue from '@vitejs/plugin-vue'
+import vueJsx from '@vitejs/plugin-vue-jsx'
+import VueDevTools from 'vite-plugin-vue-devtools'
 import Components from 'unplugin-vue-components/vite'
-import { VantResolver } from 'unplugin-vue-components/resolvers'
+import { VantResolver } from '@vant/auto-import-resolver'
 
 // https://vitejs.dev/config/
-export default defineConfig(({ command }) => ({
+export default defineConfig({
   plugins: [
-    vue2(),
-    legacy({
-      targets: ['ie >= 11'],
-      additionalLegacyPolyfills: ['regenerator-runtime/runtime'],
-    }),
+    vue(),
+    vueJsx(),
+    VueDevTools(),
     Components({
       resolvers: [VantResolver()],
     }),
+
   ],
   resolve: {
     alias: {
@@ -27,11 +27,4 @@ export default defineConfig(({ command }) => ({
       _u: fileURLToPath(new URL('./src/utils', import.meta.url)),
     },
   },
-  base: './',
-  server: {
-    open: true,
-  },
-  esbuild: {
-    drop: command === 'build' ? ['console', 'debugger'] : [],
-  },
-}))
+})

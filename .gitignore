@@ -11,13 +11,14 @@ node_modules
 .DS_Store
 dist
 dist-ssr
+coverage
 *.local
 
 /cypress/videos/
 /cypress/screenshots/
 
 # Editor directories and files
-.vscode
+.vscode/*
 !.vscode/extensions.json
 .idea
 *.suo
@@ -26,6 +27,4 @@ dist-ssr
 *.sln
 *.sw?
 
-deploy.sh
-.github
-.github/*
+*.tsbuildinfo
