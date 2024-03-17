@@ -9,6 +9,12 @@
     "preview": "vite preview",
     "lint": "eslint . --ext .vue,.js,.jsx,.cjs,.mjs --fix --ignore-path .gitignore"
   },
+  "simple-git-hooks": {
+    "pre-commit": "npx lint-staged"
+  },
+  "lint-staged": {
+    "*": "eslint --fix"
+  },
   "dependencies": {
     "axios": "^1.6.8",
     "nprogress": "^0.2.0",
@@ -23,8 +29,10 @@
     "@vitejs/plugin-vue-jsx": "^3.1.0",
     "autoprefixer": "^10.4.18",
     "eslint": "^8.57.0",
+    "lint-staged": "^15.2.2",
     "postcss": "^8.4.35",
     "sass": "^1.72.0",
+    "simple-git-hooks": "^2.11.0",
     "tailwindcss": "^3.4.1",
     "unplugin-auto-import": "^0.17.5",
     "unplugin-vue-components": "^0.26.0",
