@@ -26,8 +26,8 @@ dependencies:
 
 devDependencies:
   '@leedomjs/eslint-config':
-    specifier: ^0.8.2
-    version: 0.8.2(eslint@8.57.0)
+    specifier: ^0.8.3
+    version: 0.8.3(eslint@8.57.0)
   '@vitejs/plugin-vue':
     specifier: ^5.0.4
     version: 5.0.4(vite@5.1.6)(vue@3.4.21)
@@ -715,8 +715,8 @@ packages:
       '@jridgewell/sourcemap-codec': 1.4.15
     dev: true
 
-  /@leedomjs/eslint-config-basic@0.8.2(eslint@8.57.0):
-    resolution: {integrity: sha512-u26mBIY2Wo6xm/u6KnA0VdJOpEmSm8/LfFD58WK8TTVfF7fNUdWj94IDnNLrLa8zAXKs+I2D4LwGo72kmcsXXQ==}
+  /@leedomjs/eslint-config-basic@0.8.3(eslint@8.57.0):
+    resolution: {integrity: sha512-jC7A5wAjywqEs+kvmQKdLXfbmzOSt+CzERNPQI7+PEN21UJE7P5vPcZXWimnaCR/Ble5e/JtnN7jjnK+HaSzkw==}
     peerDependencies:
       eslint: '>=7.4.0'
     dependencies:
@@ -731,12 +731,12 @@ packages:
       - supports-color
     dev: true
 
-  /@leedomjs/eslint-config-vue@0.8.2(eslint@8.57.0):
-    resolution: {integrity: sha512-a+hHyQHgmRh1BSiwwSnUD8tnxH+HNsfHOFnsxGRAYEQzXxDXzQOvRT0PR93h3Wpv5/CrLd+BA5v1pBnbtN113g==}
+  /@leedomjs/eslint-config-vue@0.8.3(eslint@8.57.0):
+    resolution: {integrity: sha512-TrLAS3VX0+RcqodF/C8wK8izgnUpV6N+/Ww7IOyf7a7A04sTt4EjAvDB3EEoGUHXOC4EQ/cduWEAa5Yv+65k3A==}
     peerDependencies:
       eslint: '>=7.4.0'
     dependencies:
-      '@leedomjs/eslint-config-basic': 0.8.2(eslint@8.57.0)
+      '@leedomjs/eslint-config-basic': 0.8.3(eslint@8.57.0)
       eslint: 8.57.0
       eslint-plugin-vue: 9.23.0(eslint@8.57.0)
       local-pkg: 0.5.0
@@ -747,12 +747,12 @@ packages:
       - supports-color
     dev: true
 
-  /@leedomjs/eslint-config@0.8.2(eslint@8.57.0):
-    resolution: {integrity: sha512-yx5b4F4WpgnPA/IHE2w5D5jsXcpQaYRqrM4MD3sEYy72FIGt9JiMAxiqlkLtFWQ+5dSAvtI6k6/tzh2bq+A/Nw==}
+  /@leedomjs/eslint-config@0.8.3(eslint@8.57.0):
+    resolution: {integrity: sha512-IeVQxGnL3wdbEpav6NJ3we6+k4YTru6h2vcOuhjJXDKQmzBlp3tC8h/rNkv2zEq2mxQKLw3ff6Ti6Z5LjyXKdg==}
     peerDependencies:
       eslint: '>=7.4.0'
     dependencies:
-      '@leedomjs/eslint-config-vue': 0.8.2(eslint@8.57.0)
+      '@leedomjs/eslint-config-vue': 0.8.3(eslint@8.57.0)
       eslint: 8.57.0
     transitivePeerDependencies:
       - '@typescript-eslint/parser'
