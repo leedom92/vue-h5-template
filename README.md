@@ -1,6 +1,6 @@
 # vue-h5-template
 
-🍰「Vue移动端项目模版」Vite + Vue Router + Vant + Tailwindcss + Sass + NProgress + Eslint + Prettier
+🍰「Vue移动端项目模版」Vite + Vue Router + Vant + Tailwindcss + Sass + NProgress + ESLint
 
 若您习惯 `webpack` 开发，请[戳这里](https://github.com/leedom92/vue-h5-template/tree/vue-h5-webpack-template)传送
 
@@ -37,10 +37,11 @@ pnpm dev
   - [x] [NProgress颜色自定义](#nprogress)
 - ~~animate.css动画库~~
 - [x] Sass
-- [x] [alias别名](#alias)
+- [x] [Alias别名](#alias)
 - [x] [Axios封装](#axios)
-- [x] [ESlint](#standard)
+- [x] [ESLint](#standard)
 - [x] [打包移除console和debugger](#drop)
+- [x] 提交代码 `eslint` 检测
 
 > 去掉了 `animate.css` 依赖，我觉得该动画库对页面而言只是锦上添花，该项目作为模版，无需过多的可有可无的功能。
 > 若页面跳转需要有过渡效果，可以一用。
