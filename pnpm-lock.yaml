@@ -15,8 +15,8 @@ dependencies:
     specifier: ^2.1.7
     version: 2.1.7(vue@3.4.21)
   vant:
-    specifier: ^4.8.5
-    version: 4.8.5(vue@3.4.21)
+    specifier: ^4.8.7
+    version: 4.8.7(vue@3.4.21)
   vue:
     specifier: ^3.4.21
     version: 3.4.21
@@ -65,8 +65,8 @@ devDependencies:
     specifier: ^5.1.6
     version: 5.1.6(sass@1.72.0)
   vite-plugin-vue-devtools:
-    specifier: ^7.0.17
-    version: 7.0.17(vite@5.1.6)(vue@3.4.21)
+    specifier: ^7.0.18
+    version: 7.0.18(vite@5.1.6)(vue@3.4.21)
 
 packages:
 
@@ -3883,8 +3883,8 @@ packages:
     resolution: {integrity: sha512-EPD5q1uXyFxJpCrLnCc1nHnq3gOa6DZBocAIiI2TaSCA7VCJ1UJDMagCzIkXNsUYfD1daK//LTEQ8xiIbrHtcw==}
     dev: true
 
-  /vant@4.8.5(vue@3.4.21):
-    resolution: {integrity: sha512-l+gz0oVNn5z/3q2AYGsyi0jvkRb8968rr+bBe3mifV+Szad6LwD1i715LlA3Nrv8PlimQ9ZT8wtkjuKjGkNMGw==}
+  /vant@4.8.7(vue@3.4.21):
+    resolution: {integrity: sha512-puBsqVzC94niN2fFLbkpZGInE8fYK+jjoOAhQ7XAreFCn8xkxnjGpcLNoLvQSP2hUYKN7+kES1bbz/h7RHF7vQ==}
     peerDependencies:
       vue: ^3.0.0
     dependencies:
@@ -3927,8 +3927,8 @@ packages:
       - supports-color
     dev: true
 
-  /vite-plugin-vue-devtools@7.0.17(vite@5.1.6)(vue@3.4.21):
-    resolution: {integrity: sha512-SNtcv3BKChPoT8ZUleHI0ya+bDAxTZYhXhsQQ5B9B9StT/j34YYhEiFRtbZd8RM9gDyj9z30V45gK4TEzL357g==}
+  /vite-plugin-vue-devtools@7.0.18(vite@5.1.6)(vue@3.4.21):
+    resolution: {integrity: sha512-RyVbo3ZDaR4Dl5nKF8TRuqT13xqpmYHkBBlggmE9JDZN/OBgNLjHjzi72QQcDqUGHWo6EKDWH/iLD88zhEOt5g==}
     engines: {node: '>=v14.21.3'}
     peerDependencies:
       vite: ^3.1.0 || ^4.0.0-0 || ^5.0.0-0
