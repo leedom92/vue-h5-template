@@ -236,4 +236,4 @@ export default defineConfig({
 
 ## License
 
-[MIT](https://github.com/leedom92/vue-h5-template/blob/master/LICENSE)
+[MIT](https://github.com/leedom92/vue-h5-template/blob/main/LICENSE)
