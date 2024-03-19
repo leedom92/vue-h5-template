@@ -42,8 +42,10 @@ onMounted(() => {
         url="https://tailwindcss.com"
       />
       <van-cell title="NProgress.js进度条" />
-      <van-cell title="alias别名" />
+      <van-cell title="Alias别名" />
       <van-cell title="ESLint" />
+      <van-cell title="打包移除console和debugger" />
+      <van-cell title="提交代码eslint检测，并自动修复" />
     </van-cell-group>
   </div>
 </template>
