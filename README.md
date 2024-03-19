@@ -41,7 +41,7 @@ pnpm dev
 - [x] [Axios封装](#axios)
 - [x] [ESLint](#standard)
 - [x] [打包移除console和debugger](#drop)
-- [x] 提交代码 `eslint` 检测
+- [x] 提交代码 `eslint` 检测，并自动修复
 
 > 去掉了 `animate.css` 依赖，我觉得该动画库对页面而言只是锦上添花，该项目作为模版，无需过多的可有可无的功能。
 > 若页面跳转需要有过渡效果，可以一用。
@@ -183,7 +183,7 @@ export function login(params) {
 
 **[🔝](#todo-list)**
 
-### <span id="standard">ESlint 统一开发规范</span>
+### <span id="standard">ESLint 统一开发规范</span>
 
 > 使用 [`@leedomjs/eslint-config`](https://www.npmjs.com/package/@leedomjs/eslint-config) 作为ESlint默认配置
 
