@@ -7,7 +7,7 @@ onMounted(() => {
 </script>
 
 <template>
-  <div class="home p-4">
+  <div class="home p-4 pb-20">
     <h1 class="py-2">
       <span>VUE H5 开发模版</span>
     </h1>
@@ -17,11 +17,11 @@ onMounted(() => {
     <br>
     <van-cell-group>
       <van-cell
-        title="Vue3"
+        title="Vue 3"
         to="vue"
       />
       <van-cell
-        title="Vite"
+        title="Vite 5"
         url="https://vitejs.dev"
       />
       <van-cell

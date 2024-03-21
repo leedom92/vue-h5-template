@@ -2,9 +2,9 @@
 
 🍰「Vue移动端项目模版」Vite + Vue Router + Vant + Tailwindcss + Sass + NProgress + ESLint
 
-若您习惯 `webpack` 开发，请[戳这里](https://github.com/leedom92/vue-h5-template/tree/vue-h5-webpack-template)传送
-
 若您习惯 `vue 2` + `vite` 开发，请[戳这里](https://github.com/leedom92/vue-h5-template/tree/vue2-h5-vite-template)传送
+
+若您习惯 `vue 2` + `webpack` 开发，请[戳这里](https://github.com/leedom92/vue-h5-template/tree/vue-h5-webpack-template)传送
 
 ## Demo
 
@@ -14,9 +14,9 @@
 
 ```bash
 # .git folder is removed automatically
-npx degit leedom92/vue-h5-template vue-h5-template 
+npx degit leedom92/vue-h5-template my-project
 
-cd vue-h5-template
+cd my-project
 
 pnpm i # If you don't have pnpm installed, run: npm install -g pnpm
 
@@ -25,8 +25,8 @@ pnpm dev
 
 ## <span id="todo-list">Todo List</span>
 
-- [x] Vue3
-- [x] Vite
+- [x] Vue 3
+- [x] Vite 5
 - [x] Vue Router
 - [x] Pinia
 - [x] Vant
