@@ -1,2 +1,2 @@
-pnpm lint-staged
 pnpm check:spell
+pnpm lint-staged
