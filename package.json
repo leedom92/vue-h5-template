@@ -14,8 +14,7 @@
     "prepare": "husky"
   },
   "lint-staged": {
-    "*.{js,json,vue}": "eslint --fix",
-    "src/**/*.{js,json,vue,css,scss}": "cspell"
+    "*.{js,json,vue}": "eslint --fix"
   },
   "dependencies": {
     "axios": "^1.6.8",
