@@ -41,6 +41,7 @@ pnpm dev
 - [x] [Axios封装](#axios)
 - [x] [ESLint](#standard)
 - [x] [打包移除console和debugger](#drop)
+- [x] [CSpell英文拼写问题检查](#cspell)
 - [x] 提交代码 `eslint` 检测，并自动修复
 
 > 去掉了 `animate.css` 依赖，我觉得该动画库对页面而言只是锦上添花，该项目作为模版，无需过多的可有可无的功能。
@@ -230,6 +231,18 @@ export default defineConfig({
     }
   }
 })
+```
+
+**[🔝](#todo-list)**
+
+### <span id="cspell">检查英文拼写</span>
+
+> 在提交代码触发pre-commit钩子的时候会检查主要代码中的英文拼写
+>
+>你也可以提前运行一下命令来检查拼写问题
+
+``` bash
+pnpm check:spell
 ```
 
 **[🔝](#todo-list)**

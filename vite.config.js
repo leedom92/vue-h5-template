@@ -16,9 +16,11 @@ export default defineConfig(({ command }) => (
       vueJsx(),
       VueDevTools(),
       AutoImport({
+        dts: true,
         imports: ['vue', 'vue-router', 'pinia'],
       }),
       Components({
+        dts: true,
         resolvers: [VantResolver()],
       }),
 
