@@ -239,7 +239,7 @@ export default defineConfig({
 
 > 在提交代码触发pre-commit钩子的时候会检查主要代码中的英文拼写
 >
->你也可以提前运行一下命令来检查拼写问题
+>你也可以提前运行以下命令来检查拼写问题
 
 ``` bash
 pnpm check:spell
