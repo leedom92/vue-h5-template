@@ -3,16 +3,19 @@
   "type": "module",
   "version": "0.4.0",
   "private": true,
+  "packageManager": "pnpm@8.6.11",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview",
+    "check:spell": "cspell src/**/*.{js,json,vue,css,scss}",
     "lint": "eslint .",
     "lint:fix": "eslint . --fix",
     "prepare": "husky"
   },
   "lint-staged": {
-    "*.{js,json,vue}": "eslint --fix"
+    "*.{js,json,vue}": "eslint --fix",
+    "src/**/*.{js,json,vue,css,scss}": "cspell"
   },
   "dependencies": {
     "axios": "^1.6.8",
@@ -27,6 +30,7 @@
     "@vitejs/plugin-vue": "^5.0.4",
     "@vitejs/plugin-vue-jsx": "^3.1.0",
     "autoprefixer": "^10.4.18",
+    "cspell": "^8.6.0",
     "eslint": "^8.57.0",
     "husky": "^9.0.11",
     "lint-staged": "^15.2.2",
