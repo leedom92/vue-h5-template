@@ -17,7 +17,7 @@ onUnmounted(() => {
 
 <template>
   <div class="no-page">
-    <div class="flex flex-col justify-center items-center">
+    <div class="flex flex-col items-center justify-center">
       <h1>404</h1>
       <p>{{ time }}秒后回到首页</p>
     </div>

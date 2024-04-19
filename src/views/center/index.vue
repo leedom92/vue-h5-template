@@ -8,7 +8,7 @@ const logo = new URL('_i/logo.png', import.meta.url)
 
 <template>
   <div class="center">
-    <div class="flex flex-col justify-center items-center min-h-screen">
+    <div class="flex min-h-screen flex-col items-center justify-center">
       <img
         class="w-20"
         :src="logo"
@@ -24,7 +24,7 @@ const logo = new URL('_i/logo.png', import.meta.url)
           rel="noopener noreferrer"
         >{{ homepage }}</a>
       </p>
-      <p class="text-gray-500 p-4">
+      <p class="p-4 text-gray-500">
         <span @click="greet">项目作者</span>：
         <a
           :href="github"

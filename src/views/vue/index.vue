@@ -11,7 +11,7 @@ const startLoading = () => {
 </script>
 
 <template>
-  <div class="vue h-screen flex flex-col items-center justify-center">
+  <div class="vue flex h-screen flex-col items-center justify-center">
     <img
       class="w-32"
       src="@/assets/logo.svg"
@@ -25,7 +25,7 @@ const startLoading = () => {
         rel="noopener noreferrer"
       >Vue</a>
     </div>
-    <div class="flex mt-6">
+    <div class="mt-6 flex">
       <van-button
         class="mr-2"
         plain
