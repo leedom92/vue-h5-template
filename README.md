@@ -1,6 +1,6 @@
 # vue-h5-template
 
-🍰「Vue移动端项目模版」Vite + Vue Router + Vant + Tailwindcss + Sass + NProgress + ESLint + CSpell
+🍰「Vue移动端项目模版」Vite + Vue Router + Vant + Tailwindcss + Sass + NProgress + ESLint + Stylelint + CSpell
 
 若您习惯 `vue 2` + `vite` 开发，请[戳这里](https://github.com/leedom92/vue-h5-template/tree/vue2-h5-vite-template)传送
 
@@ -40,6 +40,7 @@ pnpm dev
 - [x] [Alias别名](#alias)
 - [x] [Axios封装](#axios)
 - [x] [ESLint](#standard)
+- [x] [Stylelint](#stylelint)
 - [x] [打包移除console和debugger](#drop)
 - [x] [CSpell英文拼写问题检查](#cspell)
 - [x] 提交代码 `eslint` 检测，并自动修复
@@ -186,12 +187,29 @@ export function login(params) {
 
 ### <span id="standard">ESLint 统一开发规范</span>
 
-> 使用 [`@leedomjs/eslint-config`](https://www.npmjs.com/package/@leedomjs/eslint-config) 作为ESlint默认配置
+> 使用 [`@leedomjs/eslint-config`](https://www.npmjs.com/package/@leedomjs/eslint-config) 作为ESLint默认配置
 
 ``` js
 // .eslintrc.cjs 可自定义规则
 module.exports = {
   extends: "@leedomjs"
+  // 自定义规则
+  rules: {
+    
+  }
+}
+```
+
+**[🔝](#todo-list)**
+
+### <span id="stylelint">Stylelint 统一开发规范</span>
+
+> 使用 [`@leedomjs/stylelint-config`](https://www.npmjs.com/package/@leedomjs/stylelint-config) 作为stylelint默认配置
+
+``` js
+// .stylelintrc.cjs 可自定义规则
+module.exports = {
+  extends: "@leedomjs/stylelint-config"
   // 自定义规则
   rules: {
     

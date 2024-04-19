@@ -53,11 +53,12 @@ onMounted(() => {
 
 <style lang="scss" scoped>
 .home :deep() {
+
   h1 {
-    background: url('@/assets/images/logo.png') no-repeat;
-    background-size: 2.2rem;
-    background-position: 0 0.3rem;
     padding-left: 3rem;
+    background: url('@/assets/images/logo.png') no-repeat;
+    background-position: 0 0.3rem;
+    background-size: 2.2rem;
   }
 }
 </style>
