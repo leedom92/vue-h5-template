@@ -1,9 +1,10 @@
 import { showLoadingToast, closeToast } from 'vant'
+import 'vant/lib/popup/index.css'
+import 'vant/lib/toast/index.css'
 
 const setLoading = (loading, message = '加载中...') => {
-  let showLoading = null
   if (loading) {
-    showLoading = showLoadingToast({
+    showLoadingToast({
       message,
       duration: 0,
       forbidClick: true,
