@@ -11,7 +11,7 @@ onMounted(() => {
     <h1 class="py-2">
       <span>VUE H5 开发模版</span>
     </h1>
-    <h3 class=" py-4 text-2xl text-gray-600">
+    <h3 class="py-4 text-2xl text-van-gray-6">
       A vue h5 template with vite & vant
     </h3>
     <br>

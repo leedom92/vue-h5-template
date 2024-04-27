@@ -27,7 +27,7 @@ const startLoading = () => {
     </div>
     <div class="mt-6 flex">
       <van-button
-        class="mr-2"
+        class="!mr-2"
         plain
         type="success"
         @click="$router.push('/')"
