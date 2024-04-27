@@ -38,15 +38,16 @@ onMounted(() => {
       />
       <van-cell title="Sass" />
       <van-cell
-        title="Tailwindcss"
+        title="Tailwind CSS"
         url="https://tailwindcss.com"
       />
       <van-cell title="NProgress.js进度条" />
       <van-cell title="Alias别名" />
       <van-cell title="ESLint" />
-      <van-cell title="打包移除console和debugger" />
+      <van-cell title="Stylelint" />
       <van-cell title="CSpell英文拼写问题检查" />
-      <van-cell title="提交代码eslint检测，并自动修复" />
+      <van-cell title="提交代码时eslint和stylelint检测，并自动修复" />
+      <van-cell title="打包时移除console和debugger" />
     </van-cell-group>
   </div>
 </template>
