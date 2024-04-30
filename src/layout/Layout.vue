@@ -1,5 +1,4 @@
 <script setup>
-import TabBar from '_c/TabBar.vue'
 import { constantRoutes } from '@/router/router.config'
 
 const route = useRoute()

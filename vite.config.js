@@ -22,8 +22,8 @@ export default defineConfig(({ command }) => (
       Components({
         dts: true,
         resolvers: [VantResolver()],
+        dirs: ['src/components'],
       }),
-
     ],
     resolve: {
       alias: {
