@@ -26,8 +26,8 @@ dependencies:
 
 devDependencies:
   '@leedomjs/eslint-config':
-    specifier: ^0.11.0
-    version: 0.11.0(@typescript-eslint/parser@6.21.0)(eslint@8.57.0)(tailwindcss@3.4.3)(typescript@5.3.3)
+    specifier: ^0.11.1
+    version: 0.11.1(@typescript-eslint/parser@6.21.0)(eslint@8.57.0)(tailwindcss@3.4.3)(typescript@5.3.3)
   '@leedomjs/stylelint-config':
     specifier: ^0.3.0
     version: 0.3.0(postcss-html@1.6.0)(postcss@8.4.38)(stylelint@16.4.0)(tailwindcss@3.4.3)
@@ -1147,8 +1147,8 @@ packages:
       '@jridgewell/sourcemap-codec': 1.4.15
     dev: true
 
-  /@leedomjs/eslint-config-basic@0.11.0(@typescript-eslint/parser@6.21.0)(eslint@8.57.0):
-    resolution: {integrity: sha512-w7HeLm92Qw5wB8tr3B7EmJci+nJ6M9CMlIhLjq79ErNDm6N94muQ78cblApgH88xqLmCspBq25jz1/wSGgp4yw==}
+  /@leedomjs/eslint-config-basic@0.11.1(@typescript-eslint/parser@6.21.0)(eslint@8.57.0):
+    resolution: {integrity: sha512-/0at4NrH02nmcgyaqs+Amh920rjDAvXk6/ss37Sq6DKeM6lLN+lZIDKniITxxSSgGelsQYXM+3sMOvV2cbNvXQ==}
     peerDependencies:
       eslint: '>=7.4.0 <9'
     dependencies:
@@ -1163,8 +1163,8 @@ packages:
       - supports-color
     dev: true
 
-  /@leedomjs/eslint-config-tailwindcss@0.11.0(eslint@8.57.0)(tailwindcss@3.4.3):
-    resolution: {integrity: sha512-U/rBrwzjdXL8AMPlKFHwt3TC7d0gWnV/ffV++VrAyg1iU01HC7OjFPyn7t4wK4bpA4EtITfwY40elExSta2zVA==}
+  /@leedomjs/eslint-config-tailwindcss@0.11.1(eslint@8.57.0)(tailwindcss@3.4.3):
+    resolution: {integrity: sha512-e8UnuZljH3gMKqPNGax74fx5Yk9vj6ZKtwNGLc9yOiO1fdUnZcBUBrXJNuAUsstD8l4xbgx9f1Gz0wyGtcbO3Q==}
     peerDependencies:
       eslint: '>=7.4.0 <9'
     dependencies:
@@ -1174,14 +1174,14 @@ packages:
       - tailwindcss
     dev: true
 
-  /@leedomjs/eslint-config-ts@0.11.0(@typescript-eslint/parser@6.21.0)(eslint@8.57.0)(typescript@5.3.3):
-    resolution: {integrity: sha512-J2+34rWnjrqZAK9t6Z0YYquIe2H5/eSeXZl6Q/hRbf9aeWvehjLMieonLjvdpcH9jQhoc0HACImQrIY9j/TFVA==}
+  /@leedomjs/eslint-config-ts@0.11.1(@typescript-eslint/parser@6.21.0)(eslint@8.57.0)(typescript@5.3.3):
+    resolution: {integrity: sha512-SX8XhGXxm0tvxkUezA7GMu+2kZgZbxr27hjlZ36e/4jI0ydGZfsLqE9uH+lR6d15N503fzGiJvviBWXmH+mt+A==}
     peerDependencies:
       eslint: '>=7.4.0 <9'
       typescript: '>=3.9 <5.4.0'
     dependencies:
       '@antfu/eslint-config-ts': 0.43.1(eslint@8.57.0)(typescript@5.3.3)
-      '@leedomjs/eslint-config-basic': 0.11.0(@typescript-eslint/parser@6.21.0)(eslint@8.57.0)
+      '@leedomjs/eslint-config-basic': 0.11.1(@typescript-eslint/parser@6.21.0)(eslint@8.57.0)
       eslint: 8.57.0
       typescript: 5.3.3
     transitivePeerDependencies:
@@ -1192,14 +1192,14 @@ packages:
       - supports-color
     dev: true
 
-  /@leedomjs/eslint-config-vue@0.11.0(@typescript-eslint/parser@6.21.0)(eslint@8.57.0)(tailwindcss@3.4.3)(typescript@5.3.3):
-    resolution: {integrity: sha512-tYZ1AJHG38j5FuSHYdYDbSQxRovXsD6QI891sxJRq11T6YG9HdrnMomc8YIQ2DxGAOWzlUgtK77l2cWl3597mA==}
+  /@leedomjs/eslint-config-vue@0.11.1(@typescript-eslint/parser@6.21.0)(eslint@8.57.0)(tailwindcss@3.4.3)(typescript@5.3.3):
+    resolution: {integrity: sha512-wwP6K3fnwTdtiF0MOtJYM/n5rUEYJwKis3u/DoFblb0zOzAbI41gFg0y5yv82HwnDpeS4dCDCa7RU3y3l0ekBw==}
     peerDependencies:
       eslint: '>=7.4.0 <9'
     dependencies:
-      '@leedomjs/eslint-config-basic': 0.11.0(@typescript-eslint/parser@6.21.0)(eslint@8.57.0)
-      '@leedomjs/eslint-config-tailwindcss': 0.11.0(eslint@8.57.0)(tailwindcss@3.4.3)
-      '@leedomjs/eslint-config-ts': 0.11.0(@typescript-eslint/parser@6.21.0)(eslint@8.57.0)(typescript@5.3.3)
+      '@leedomjs/eslint-config-basic': 0.11.1(@typescript-eslint/parser@6.21.0)(eslint@8.57.0)
+      '@leedomjs/eslint-config-tailwindcss': 0.11.1(eslint@8.57.0)(tailwindcss@3.4.3)
+      '@leedomjs/eslint-config-ts': 0.11.1(@typescript-eslint/parser@6.21.0)(eslint@8.57.0)(typescript@5.3.3)
       eslint: 8.57.0
       eslint-plugin-vue: 9.23.0(eslint@8.57.0)
       local-pkg: 0.5.0
@@ -1213,12 +1213,12 @@ packages:
       - typescript
     dev: true
 
-  /@leedomjs/eslint-config@0.11.0(@typescript-eslint/parser@6.21.0)(eslint@8.57.0)(tailwindcss@3.4.3)(typescript@5.3.3):
-    resolution: {integrity: sha512-fNl8KpxXxuq6ju3UVeVahg7ipDSgE4pLi9lkRw+Mh5hi9RaHcNc+0iX7B/IEEoa3EK96Q94A1Us/Ikte5PrORw==}
+  /@leedomjs/eslint-config@0.11.1(@typescript-eslint/parser@6.21.0)(eslint@8.57.0)(tailwindcss@3.4.3)(typescript@5.3.3):
+    resolution: {integrity: sha512-K0BmjDGko+uA1pf5VFTCNk6OWAh1jy0yDKVHl7MN3yv/rIswuHUplT8liEQ9mh0YWXIpd326ipdJq1Vsjvxm7w==}
     peerDependencies:
       eslint: '>=7.4.0 <9'
     dependencies:
-      '@leedomjs/eslint-config-vue': 0.11.0(@typescript-eslint/parser@6.21.0)(eslint@8.57.0)(tailwindcss@3.4.3)(typescript@5.3.3)
+      '@leedomjs/eslint-config-vue': 0.11.1(@typescript-eslint/parser@6.21.0)(eslint@8.57.0)(tailwindcss@3.4.3)(typescript@5.3.3)
       eslint: 8.57.0
     transitivePeerDependencies:
       - '@typescript-eslint/parser'
