@@ -9,6 +9,9 @@ export default {
      * 下面配置可简写为：
      * colorPreset()
      *
+     * 若不想启用则设置为false：
+     * colorPreset({ vant: false })
+     *
      * 如果你喜欢 element-ui 或者 naive-ui 的主题色，
      * 你也可以启用它们：
      * colorPreset({
@@ -16,9 +19,7 @@ export default {
      *   naive: true
      * })
      */
-    colorPreset({
-      vant: true,
-    }),
+    colorPreset(),
   ],
   content: ['./src/**/*.{vue,js}'],
   theme: {

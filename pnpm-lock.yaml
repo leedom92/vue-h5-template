@@ -32,8 +32,8 @@ devDependencies:
     specifier: ^0.3.0
     version: 0.3.0(postcss-html@1.6.0)(postcss@8.4.38)(stylelint@16.5.0)(tailwindcss@3.4.3)
   '@leedomjs/tailwindcss-color-preset':
-    specifier: ^0.3.0
-    version: 0.3.0(tailwindcss@3.4.3)
+    specifier: ^0.4.0
+    version: 0.4.0(tailwindcss@3.4.3)
   '@vitejs/plugin-vue':
     specifier: ^5.0.4
     version: 5.0.4(vite@5.2.11)(vue@3.4.27)
@@ -1309,8 +1309,8 @@ packages:
       - tailwindcss
     dev: true
 
-  /@leedomjs/tailwindcss-color-preset@0.3.0(tailwindcss@3.4.3):
-    resolution: {integrity: sha512-bEkjVxfBJzhKE9P6wI4dSjIPttDNP70lVeIcyR54fvao5YVjKWwFB8V4rZewqvJQi7u0Oj432M5qxKKhUngzIg==}
+  /@leedomjs/tailwindcss-color-preset@0.4.0(tailwindcss@3.4.3):
+    resolution: {integrity: sha512-CmDIeJUx3ymJY15Vjw52gW4m15py43LpreNAvaratwKBSL5J5h9Wx4BJhf4sU+QD0dn69F+LKi5kRIzSclMGuQ==}
     peerDependencies:
       tailwindcss: '>=2.2.19'
     dependencies:
