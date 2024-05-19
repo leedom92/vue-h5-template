@@ -19,7 +19,9 @@ export default {
      *   naive: true
      * })
      */
-    colorPreset(),
+    colorPreset({
+      vant: true,
+    }),
   ],
   content: ['./src/**/*.{vue,js}'],
   theme: {
