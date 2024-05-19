@@ -26,14 +26,14 @@ dependencies:
 
 devDependencies:
   '@leedomjs/eslint-config':
-    specifier: ^0.11.2
-    version: 0.11.2(@typescript-eslint/parser@6.21.0)(eslint@8.57.0)(tailwindcss@3.4.3)(typescript@5.3.3)
+    specifier: ^0.11.3
+    version: 0.11.3(@typescript-eslint/parser@6.21.0)(eslint@8.57.0)(tailwindcss@3.4.3)(typescript@5.3.3)
   '@leedomjs/stylelint-config':
     specifier: ^0.3.0
     version: 0.3.0(postcss-html@1.6.0)(postcss@8.4.38)(stylelint@16.5.0)(tailwindcss@3.4.3)
   '@leedomjs/tailwindcss-color-preset':
-    specifier: ^0.5.0
-    version: 0.5.0(tailwindcss@3.4.3)
+    specifier: ^0.6.0
+    version: 0.6.0(tailwindcss@3.4.3)
   '@vitejs/plugin-vue':
     specifier: ^5.0.4
     version: 5.0.4(vite@5.2.11)(vue@3.4.27)
@@ -77,8 +77,8 @@ devDependencies:
     specifier: ^5.2.11
     version: 5.2.11(sass@1.77.2)
   vite-plugin-vue-devtools:
-    specifier: ^7.2.0
-    version: 7.2.0(vite@5.2.11)(vue@3.4.27)
+    specifier: ^7.2.1
+    version: 7.2.1(vite@5.2.11)(vue@3.4.27)
 
 packages:
 
@@ -1151,8 +1151,8 @@ packages:
       '@jridgewell/sourcemap-codec': 1.4.15
     dev: true
 
-  /@leedomjs/eslint-config-basic@0.11.2(@typescript-eslint/parser@6.21.0)(eslint@8.57.0):
-    resolution: {integrity: sha512-O6TSKGuQSPaz0EazkrJZaQHHi2APTCz/PJ4ssYUTFlYkDf3xakNJO+77eE8SeODrzn5cCvpvLlZitlJtytpjdA==}
+  /@leedomjs/eslint-config-basic@0.11.3(@typescript-eslint/parser@6.21.0)(eslint@8.57.0):
+    resolution: {integrity: sha512-uW3t8VBNoQ0/A0HWV2MHdFeDlRY73X75gGC3CHR4ckH+G+vWcF/F9lKf6vVWcqBDWv1p+Y64qXpyYkGysI2eLA==}
     peerDependencies:
       eslint: '>=7.4.0 <9'
     dependencies:
@@ -1167,8 +1167,8 @@ packages:
       - supports-color
     dev: true
 
-  /@leedomjs/eslint-config-tailwindcss@0.11.2(eslint@8.57.0)(tailwindcss@3.4.3):
-    resolution: {integrity: sha512-DGrUL5l0nzfDka3B8PAmpIJYECOxm6MypsQMQ6M1HQm6DBEWRPmXdx0gOUPgyJtewPS1/cW1TIgKgeS+ZA7sdw==}
+  /@leedomjs/eslint-config-tailwindcss@0.11.3(eslint@8.57.0)(tailwindcss@3.4.3):
+    resolution: {integrity: sha512-dp7zXfdewwx/Gk8OPOzshCymgjEk1XzRWg+ZBX0lT4zVeOo/6/AZuLnTXNCB/Ni0EfT0E44Rpfeu6kkRf39N9w==}
     peerDependencies:
       eslint: '>=7.4.0 <9'
     dependencies:
@@ -1178,14 +1178,14 @@ packages:
       - tailwindcss
     dev: true
 
-  /@leedomjs/eslint-config-ts@0.11.2(@typescript-eslint/parser@6.21.0)(eslint@8.57.0)(typescript@5.3.3):
-    resolution: {integrity: sha512-V/uIl9+8cUf2KPiQ4xDm0QnXxhn241NCrRoKmosclJ0/ff6BHiG56brBRWxhAvjSptk1iU6e3ueCoKHeyLvqUA==}
+  /@leedomjs/eslint-config-ts@0.11.3(@typescript-eslint/parser@6.21.0)(eslint@8.57.0)(typescript@5.3.3):
+    resolution: {integrity: sha512-zYTPd5prpvPh9jgu37lRWpQ6XJ3WbZfqWO9XytSVmtmn49nbOJu7l4J8c7LVc5sHetFGehClgbD7bS8XTtDgWw==}
     peerDependencies:
       eslint: '>=7.4.0 <9'
-      typescript: '>=3.9 <5.4.0'
+      typescript: '>=3.9 <=5.3.3'
     dependencies:
       '@antfu/eslint-config-ts': 0.43.1(eslint@8.57.0)(typescript@5.3.3)
-      '@leedomjs/eslint-config-basic': 0.11.2(@typescript-eslint/parser@6.21.0)(eslint@8.57.0)
+      '@leedomjs/eslint-config-basic': 0.11.3(@typescript-eslint/parser@6.21.0)(eslint@8.57.0)
       eslint: 8.57.0
       typescript: 5.3.3
     transitivePeerDependencies:
@@ -1196,14 +1196,14 @@ packages:
       - supports-color
     dev: true
 
-  /@leedomjs/eslint-config-vue@0.11.2(@typescript-eslint/parser@6.21.0)(eslint@8.57.0)(tailwindcss@3.4.3)(typescript@5.3.3):
-    resolution: {integrity: sha512-VSdFcJOUkbrBifTLPiirUvrYKTVK318OJTQOsXmDSScy2Wenhrs4F1upSzpHkleiyfsAaM0KkJ4gwseEqTEEGQ==}
+  /@leedomjs/eslint-config-vue@0.11.3(@typescript-eslint/parser@6.21.0)(eslint@8.57.0)(tailwindcss@3.4.3)(typescript@5.3.3):
+    resolution: {integrity: sha512-t2rJHFh8B7jnIBgZj/aEqdgu/pYjM2mcp9aQkn06WTlzSgmc7iuQlUq+Dbau+9mai7mZZAhTQHobCtNQJaoTsw==}
     peerDependencies:
       eslint: '>=7.4.0 <9'
     dependencies:
-      '@leedomjs/eslint-config-basic': 0.11.2(@typescript-eslint/parser@6.21.0)(eslint@8.57.0)
-      '@leedomjs/eslint-config-tailwindcss': 0.11.2(eslint@8.57.0)(tailwindcss@3.4.3)
-      '@leedomjs/eslint-config-ts': 0.11.2(@typescript-eslint/parser@6.21.0)(eslint@8.57.0)(typescript@5.3.3)
+      '@leedomjs/eslint-config-basic': 0.11.3(@typescript-eslint/parser@6.21.0)(eslint@8.57.0)
+      '@leedomjs/eslint-config-tailwindcss': 0.11.3(eslint@8.57.0)(tailwindcss@3.4.3)
+      '@leedomjs/eslint-config-ts': 0.11.3(@typescript-eslint/parser@6.21.0)(eslint@8.57.0)(typescript@5.3.3)
       eslint: 8.57.0
       eslint-plugin-vue: 9.23.0(eslint@8.57.0)
       local-pkg: 0.5.0
@@ -1217,12 +1217,12 @@ packages:
       - typescript
     dev: true
 
-  /@leedomjs/eslint-config@0.11.2(@typescript-eslint/parser@6.21.0)(eslint@8.57.0)(tailwindcss@3.4.3)(typescript@5.3.3):
-    resolution: {integrity: sha512-ob42lMyrvBPBZKfOiz4MABntLLkyeZDSOBcIOZij6IiSK0dGh4TedFDoCf3FBKlgrVrLoOFtanmKFh0/VtITMA==}
+  /@leedomjs/eslint-config@0.11.3(@typescript-eslint/parser@6.21.0)(eslint@8.57.0)(tailwindcss@3.4.3)(typescript@5.3.3):
+    resolution: {integrity: sha512-KG6x4XPFyOsLZY3OSHRFOKhLk/6Q9vs45wMmvIrJvnBvupa4L8/ahssGA8d6rUIFvSU5IaT5Ba92u6ZJnPba2g==}
     peerDependencies:
       eslint: '>=7.4.0 <9'
     dependencies:
-      '@leedomjs/eslint-config-vue': 0.11.2(@typescript-eslint/parser@6.21.0)(eslint@8.57.0)(tailwindcss@3.4.3)(typescript@5.3.3)
+      '@leedomjs/eslint-config-vue': 0.11.3(@typescript-eslint/parser@6.21.0)(eslint@8.57.0)(tailwindcss@3.4.3)(typescript@5.3.3)
       eslint: 8.57.0
     transitivePeerDependencies:
       - '@typescript-eslint/parser'
@@ -1309,8 +1309,8 @@ packages:
       - tailwindcss
     dev: true
 
-  /@leedomjs/tailwindcss-color-preset@0.5.0(tailwindcss@3.4.3):
-    resolution: {integrity: sha512-/tR3eXoKoI6DaEosoLMDiiVKft2jEU6zq4+fDYuGNdDSFPSeaAp7QVbzA1N99837Rq7gKnLFJZrtHV0SCWX8+Q==}
+  /@leedomjs/tailwindcss-color-preset@0.6.0(tailwindcss@3.4.3):
+    resolution: {integrity: sha512-97v+yaEZ5u9L7wgbzSOIXVlBMTtpHfmLR5jn2PsGnT8AVyUiSk8IRhXI83kK/lFFn45g6YXpTQ3TXGTanJPzEA==}
     peerDependencies:
       tailwindcss: '>=2.2.19'
     dependencies:
@@ -1574,7 +1574,7 @@ packages:
       graphemer: 1.4.0
       ignore: 5.3.1
       natural-compare: 1.4.0
-      semver: 7.6.0
+      semver: 7.6.2
       ts-api-utils: 1.3.0(typescript@5.3.3)
       typescript: 5.3.3
     transitivePeerDependencies:
@@ -1662,7 +1662,7 @@ packages:
       debug: 4.3.4
       globby: 11.1.0
       is-glob: 4.0.3
-      semver: 7.6.0
+      semver: 7.6.2
       tsutils: 3.21.0(typescript@5.3.3)
       typescript: 5.3.3
     transitivePeerDependencies:
@@ -1684,7 +1684,7 @@ packages:
       globby: 11.1.0
       is-glob: 4.0.3
       minimatch: 9.0.3
-      semver: 7.6.0
+      semver: 7.6.2
       ts-api-utils: 1.3.0(typescript@5.3.3)
       typescript: 5.3.3
     transitivePeerDependencies:
@@ -1705,7 +1705,7 @@ packages:
       '@typescript-eslint/typescript-estree': 5.62.0(typescript@5.3.3)
       eslint: 8.57.0
       eslint-scope: 5.1.1
-      semver: 7.6.0
+      semver: 7.6.2
     transitivePeerDependencies:
       - supports-color
       - typescript
@@ -1724,7 +1724,7 @@ packages:
       '@typescript-eslint/types': 6.21.0
       '@typescript-eslint/typescript-estree': 6.21.0(typescript@5.3.3)
       eslint: 8.57.0
-      semver: 7.6.0
+      semver: 7.6.2
     transitivePeerDependencies:
       - supports-color
       - typescript
@@ -1906,11 +1906,11 @@ packages:
     resolution: {integrity: sha512-LgPscpE3Vs0x96PzSSB4IGVSZXZBZHpfxs+ZA1d+VEPwHdOXowy/Y2CsvCAIFrf+ssVU1pD1jidj505EpUnfbA==}
     dev: false
 
-  /@vue/devtools-core@7.2.0(vite@5.2.11)(vue@3.4.27):
-    resolution: {integrity: sha512-cHSeu70rTtubt2DYia+VDGNTC1m84Xyuk5eNTjmOpMLECaJnWnzCv6kR84EZp7rG+MVZalJG+4ecX2GaTbU3cQ==}
+  /@vue/devtools-core@7.2.1(vite@5.2.11)(vue@3.4.27):
+    resolution: {integrity: sha512-OyWl455UnJIVgZ6lo5WQ79WbDMoXtSRwyNKp9WzCZ0HhuQywIk4qv59KtLRe75uVmtGBde4hXNaSyRm+x9bY6g==}
     dependencies:
-      '@vue/devtools-kit': 7.2.0(vue@3.4.27)
-      '@vue/devtools-shared': 7.2.0
+      '@vue/devtools-kit': 7.2.1(vue@3.4.27)
+      '@vue/devtools-shared': 7.2.1
       mitt: 3.0.1
       nanoid: 3.3.7
       pathe: 1.1.2
@@ -1920,12 +1920,12 @@ packages:
       - vue
     dev: true
 
-  /@vue/devtools-kit@7.2.0(vue@3.4.27):
-    resolution: {integrity: sha512-Kx+U0QiQg/g714euYKfnCdhTcOycSlH1oyTE57D0sAmisdsRCNLfXcnnIwcFY2jdCpuz9DNbuE0VWQuYF5zAZQ==}
+  /@vue/devtools-kit@7.2.1(vue@3.4.27):
+    resolution: {integrity: sha512-Wak/fin1X0Q8LLIfCAHBrdaaB+R6IdpSXsDByPHbQ3BmkCP0/cIo/oEGp9i0U2+gEqD4L3V9RDjNf1S34DTzQQ==}
     peerDependencies:
       vue: ^3.0.0
     dependencies:
-      '@vue/devtools-shared': 7.2.0
+      '@vue/devtools-shared': 7.2.1
       hookable: 5.5.3
       mitt: 3.0.1
       perfect-debounce: 1.0.0
@@ -1933,8 +1933,8 @@ packages:
       vue: 3.4.27(typescript@5.3.3)
     dev: true
 
-  /@vue/devtools-shared@7.2.0:
-    resolution: {integrity: sha512-gVr3IjKjU7axNvclRgICgy1gq/TDnF1hhBAEox+l5mMXZiTIFVIm1zpcIPssc0HxMDgzy+lXqOVsY4DGyZ+ZeA==}
+  /@vue/devtools-shared@7.2.1:
+    resolution: {integrity: sha512-PCJF4UknJmOal68+X9XHyVeQ+idv0LFujkTOIW30+GaMJqwFVN9LkQKX4gLqn61KkGMdJTzQ1bt7EJag3TI6AA==}
     dependencies:
       rfdc: 1.3.1
     dev: true
@@ -2248,7 +2248,7 @@ packages:
   /builtins@5.1.0:
     resolution: {integrity: sha512-SW9lzGTLvWTP1AY8xeAMZimqDrIaSdLQUcVr9DMef51niJ022Ri87SwRRKYm4A6iHfkPaiVUu/Duw2Wc4J7kKg==}
     dependencies:
-      semver: 7.6.0
+      semver: 7.6.2
     dev: true
 
   /bundle-name@4.1.0:
@@ -2971,7 +2971,7 @@ packages:
       eslint: '>=6.0.0'
     dependencies:
       eslint: 8.57.0
-      semver: 7.6.0
+      semver: 7.6.2
     dev: true
 
   /eslint-compat-utils@0.5.0(eslint@8.57.0):
@@ -2981,7 +2981,7 @@ packages:
       eslint: '>=6.0.0'
     dependencies:
       eslint: 8.57.0
-      semver: 7.6.0
+      semver: 7.6.2
     dev: true
 
   /eslint-import-resolver-node@0.3.9:
@@ -3155,7 +3155,7 @@ packages:
       eslint: 8.57.0
       esquery: 1.5.0
       is-builtin-module: 3.2.1
-      semver: 7.6.0
+      semver: 7.6.2
       spdx-expression-parse: 4.0.0
     transitivePeerDependencies:
       - supports-color
@@ -3206,7 +3206,7 @@ packages:
       is-core-module: 2.13.1
       minimatch: 3.1.2
       resolve: 1.22.8
-      semver: 7.6.0
+      semver: 7.6.2
     dev: true
 
   /eslint-plugin-no-only-tests@3.1.0:
@@ -3254,7 +3254,7 @@ packages:
       read-pkg-up: 7.0.1
       regexp-tree: 0.1.27
       regjsparser: 0.10.0
-      semver: 7.6.0
+      semver: 7.6.2
       strip-indent: 3.0.0
     dev: true
 
@@ -3284,7 +3284,7 @@ packages:
       natural-compare: 1.4.0
       nth-check: 2.1.1
       postcss-selector-parser: 6.0.16
-      semver: 7.6.0
+      semver: 7.6.2
       vue-eslint-parser: 9.4.2(eslint@8.57.0)
       xml-name-validator: 4.0.0
     transitivePeerDependencies:
@@ -4239,7 +4239,7 @@ packages:
       acorn: 8.11.3
       eslint-visitor-keys: 3.4.3
       espree: 9.6.1
-      semver: 7.6.0
+      semver: 7.6.2
     dev: true
 
   /jsonc-parser@3.2.1:
@@ -6034,15 +6034,15 @@ packages:
       - supports-color
     dev: true
 
-  /vite-plugin-vue-devtools@7.2.0(vite@5.2.11)(vue@3.4.27):
-    resolution: {integrity: sha512-bFWwx/YF9M+aXTjDo0/6DrC7+WCzLg7wAmFoQA3Gd7cv5WV4u65hHSZN8bq0zhgHqtYQZdWnp0L2z6JNCwcIGg==}
+  /vite-plugin-vue-devtools@7.2.1(vite@5.2.11)(vue@3.4.27):
+    resolution: {integrity: sha512-4k7QNZz0nSojoePQoxnE5fIzi8RU1QJHc0TEg4golv2phZxhBGfjScZD2B8X6bcrRbUQ9CaRKN0dzBs1xtzzNg==}
     engines: {node: '>=v14.21.3'}
     peerDependencies:
       vite: ^3.1.0 || ^4.0.0-0 || ^5.0.0-0
     dependencies:
-      '@vue/devtools-core': 7.2.0(vite@5.2.11)(vue@3.4.27)
-      '@vue/devtools-kit': 7.2.0(vue@3.4.27)
-      '@vue/devtools-shared': 7.2.0
+      '@vue/devtools-core': 7.2.1(vite@5.2.11)(vue@3.4.27)
+      '@vue/devtools-kit': 7.2.1(vue@3.4.27)
+      '@vue/devtools-shared': 7.2.1
       execa: 8.0.1
       sirv: 2.0.4
       vite: 5.2.11(sass@1.77.2)
@@ -6146,7 +6146,7 @@ packages:
       espree: 9.6.1
       esquery: 1.5.0
       lodash: 4.17.21
-      semver: 7.6.0
+      semver: 7.6.2
     transitivePeerDependencies:
       - supports-color
     dev: true
@@ -6283,7 +6283,7 @@ packages:
     dependencies:
       eslint-visitor-keys: 3.4.3
       lodash: 4.17.21
-      yaml: 2.4.1
+      yaml: 2.4.2
     dev: true
 
   /yaml@2.3.4:
