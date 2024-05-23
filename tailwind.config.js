@@ -18,10 +18,14 @@ export default {
      *   element: true,
      *   naive: true
      * })
+     *
+     * 不使用该预设可以直接注释，或者传false
+     * colorPreset(false)
+     *
+     * 启用所有主题色
+     * colorPreset(true)
      */
-    colorPreset({
-      vant: true,
-    }),
+    colorPreset(),
   ],
   content: ['./src/**/*.{vue,js}'],
   theme: {

@@ -19,7 +19,7 @@ const startLoading = () => {
     >
     <div class="mt-6">
       <a
-        class="text-2xl text-green-700"
+        class="text-2xl text-van-success"
         href="https://vuejs.org"
         target="_blank"
         rel="noopener noreferrer"

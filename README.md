@@ -267,9 +267,11 @@ pnpm check:spell
 
 ### 在 `tailwindcss.config.js` 中添加vant-ui的基本色
 
+> [!NOTE] 
 > 使用了 [tailwindcss-color-preset](https://www.npmjs.com/package/@leedomjs/tailwindcss-color-preset) 作为预设。
+>
+> 用法：以 `van` 为关键字，还提供两个渐变色，基本主题色名称请参考 [`van-button`](https://vant-contrib.gitee.io/vant/#/zh-CN/button) 的类型颜色， 例如 `primary`。
 
-用法：以 `van` 为关键字，还提供两个渐变色，基本主题色名称请参考 [`van-button`](https://vant-contrib.gitee.io/vant/#/zh-CN/button) 的类型颜色， 例如 `primary`。
 ```vue
 <div class="text-van-primary bg-van-gradient-red">vue</div>
 <div class="bg-van-success bg-van-gradient-orange">vite</div>
