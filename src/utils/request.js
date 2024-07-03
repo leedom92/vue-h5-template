@@ -1,7 +1,7 @@
 import axios from 'axios'
 import { showLoadingToast, closeToast, showNotify } from 'vant'
-import 'vant/es/toast/style'
-import 'vant/es/notify/style'
+import 'vant/lib/toast/style'
+import 'vant/lib/notify/style'
 
 const codeMessage = {
   200: '服务器成功返回请求的数据。',
