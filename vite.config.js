@@ -1,5 +1,6 @@
 import { fileURLToPath, URL } from 'node:url'
 
+import path from 'path'
 import { defineConfig } from 'vite'
 import vue from '@vitejs/plugin-vue'
 import vueJsx from '@vitejs/plugin-vue-jsx'
@@ -7,6 +8,7 @@ import VueDevTools from 'vite-plugin-vue-devtools'
 import AutoImport from 'unplugin-auto-import/vite'
 import Components from 'unplugin-vue-components/vite'
 import { VantResolver } from 'unplugin-vue-components/resolvers'
+import { createSvgIconsPlugin } from 'vite-plugin-svg-icons'
 
 // https://vitejs.dev/config/
 export default defineConfig(({ command }) => (
@@ -23,6 +25,12 @@ export default defineConfig(({ command }) => (
         dts: true,
         resolvers: [VantResolver()],
         dirs: ['src/components'],
+      }),
+      // https://github.com/vbenjs/vite-plugin-svg-icons/blob/main/README.md
+      createSvgIconsPlugin({
+        iconDirs: [path.resolve(process.cwd(), 'src/icons')],
+        symbolId: 'icon-[dir]-[name]',
+        customDomId: '__svg__icons__dom__',
       }),
     ],
     resolve: {
