@@ -8,7 +8,7 @@ const active = ref(route.name)
 </script>
 
 <template>
-  <van-tabbar v-model="active">
+  <van-tabbar v-model="active" class="!fixed">
     <van-tabbar-item
       v-for="(item, $index) in routes"
       :key="$index"
