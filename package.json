@@ -23,7 +23,7 @@
     "nprogress": "^0.2.0",
     "pinia": "^2.2.0",
     "vant": "^4.9.3",
-    "vue": "^3.4.34",
+    "vue": "^3.4.35",
     "vue-router": "^4.4.0"
   },
   "devDependencies": {
