@@ -12,7 +12,7 @@ const startLoading = () => {
 
 <template>
   <div class="vue flex h-screen flex-col items-center justify-center">
-    <svg-icon class="w-32" name="vue" />
+    <svg-icon class="size-32" name="vue" />
     <div class="mt-6">
       <a
         class="text-2xl text-van-success"
