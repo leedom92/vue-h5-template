@@ -1,0 +1,12 @@
+<svg viewBox="0 0 250 250" xmlns="http://www.w3.org/2000/svg">
+    <polygon points="40,60 40,210 190,210" fill="white"  />
+    <path d="M40 60 A50 50 0 0 1 190 210" />
+    <line x1="40.5" y1="60" x2="40.5" y2="210" stroke="black" />
+    <line x1="40" y1="210" x2="190" y2="209.5" stroke="black" />
+  
+    <circle r="20" cx="70" cy="180" />
+    <circle r="20" cx="166" cy="84" fill="white" />
+  
+    <text x="61" y="188" fill="white" font-size="30">e</text>
+    <text x="154" y="93" fill="black" font-size="28" font-weight="bold">m</text>
+</svg>
