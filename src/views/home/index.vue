@@ -8,9 +8,10 @@ onMounted(() => {
 
 <template>
   <div class="home p-4 pb-20">
-    <h1 class="py-2">
-      <span>VUE H5 开发模版</span>
-    </h1>
+    <div class="flex items-center py-2">
+      <svg-icon name="leedom" class="size-8" />
+      <span class="ml-2">VUE H5 开发模版</span>
+    </div>
     <h3 class="py-4 text-2xl text-van-gray-6">
       A vue h5 template with vite & vant
     </h3>
@@ -94,15 +95,3 @@ onMounted(() => {
     </van-cell-group>
   </div>
 </template>
-
-<style lang="scss" scoped>
-.home :deep() {
-
-  h1 {
-    padding-left: 3rem;
-    background: url('@/assets/images/logo.png') no-repeat;
-    background-position: 0 0.3rem;
-    background-size: 2.2rem;
-  }
-}
-</style>

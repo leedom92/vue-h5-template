@@ -3,17 +3,12 @@ import { useUserStore } from '@/stores/user'
 
 const { author, github, homepage } = useUserStore()
 
-const logo = new URL('_i/logo.png', import.meta.url)
 </script>
 
 <template>
   <div class="center">
     <div class="flex min-h-screen flex-col items-center justify-center">
-      <img
-        class="w-20"
-        :src="logo"
-        alt=""
-      >
+      <svg-icon name="leedom" class="size-28" />
       <h2 class="p-4 text-gray-800">
         VUE H5 开发模版
       </h2>
