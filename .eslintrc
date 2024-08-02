@@ -1,3 +1,6 @@
 {
-  "extends": "@leedomjs"
+  "extends": [
+    "@leedomjs",
+    "./.eslintrc-auto-import.json"
+  ]
 }

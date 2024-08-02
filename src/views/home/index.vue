@@ -45,6 +45,15 @@ onMounted(() => {
       </van-cell>
 
       <van-cell
+        title="Vitest"
+        url="https://vitest.dev"
+      >
+        <template #icon>
+          <svg-icon class="mr-2 size-6" name="vitest" />
+        </template>
+      </van-cell>
+
+      <van-cell
         title="Pinia"
         url="https://pinia.vuejs.org"
       >

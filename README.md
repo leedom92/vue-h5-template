@@ -1,6 +1,6 @@
 # vue-h5-template
 
-🍰「Vue移动端项目模版」Vite + Vue Router + Vant + Tailwindcss + Sass + NProgress + ESLint + Stylelint + CSpell
+🍰「Vue移动端项目模版」Vite + Vue Router + Vitest + Vant + Tailwindcss + Sass + NProgress + ESLint + Stylelint + CSpell
 
 若您习惯 `vue 2` + `vite` 开发，请[戳这里](https://github.com/leedom92/vue-h5-template/tree/vue2-h5-vite-template)传送
 
@@ -28,6 +28,7 @@ pnpm dev
 - [x] Vue 3
 - [x] Vite 5
 - [x] Vue Router
+- [x] Vitest
 - [x] Pinia
 - [x] Vant
   - [x] [组件按需加载](#unplugin-vue-components)

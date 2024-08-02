@@ -1,5 +1,6 @@
-import { fileURLToPath, URL } from 'node:url'
+/// <reference types="vitest" />
 
+import { fileURLToPath, URL } from 'node:url'
 import path from 'path'
 import { defineConfig } from 'vite'
 import vue from '@vitejs/plugin-vue'
@@ -19,7 +20,11 @@ export default defineConfig(({ command }) => (
       VueDevTools(),
       AutoImport({
         dts: true,
-        imports: ['vue', 'vue-router', 'pinia'],
+        imports: ['vue', 'vue-router', 'pinia', 'vitest'],
+        eslintrc: {
+          enabled: true,
+          filepath: './.eslintrc-auto-import.json',
+        },
       }),
       Components({
         dts: true,
@@ -48,6 +53,9 @@ export default defineConfig(({ command }) => (
     },
     esbuild: {
       drop: command === 'build' ? ['console', 'debugger'] : [],
+    },
+    test: {
+      environment: 'jsdom',
     },
   }
 ))
