@@ -33,6 +33,7 @@
     "@leedomjs/tailwindcss-color-preset": "^0.7.0",
     "@vitejs/plugin-vue": "^5.1.2",
     "@vitejs/plugin-vue-jsx": "^4.0.0",
+    "@vue/test-utils": "^2.4.6",
     "autoprefixer": "^10.4.20",
     "cspell": "^8.13.1",
     "eslint": "^8.57.0",

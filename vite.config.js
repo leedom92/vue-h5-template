@@ -20,7 +20,12 @@ export default defineConfig(({ command }) => (
       VueDevTools(),
       AutoImport({
         dts: true,
-        imports: ['vue', 'vue-router', 'pinia', 'vitest'],
+        imports: [
+          'vue', 'vue-router', 'pinia', 'vitest',
+          {
+            '@vue/test-utils': ['mount', 'shallowMount'],
+          },
+        ],
         eslintrc: {
           enabled: true,
           filepath: './.eslintrc-auto-import.json',

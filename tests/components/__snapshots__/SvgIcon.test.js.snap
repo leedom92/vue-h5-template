@@ -1,0 +1,5 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`SvgIcon.vue > color 1`] = `"#666"`;
+
+exports[`SvgIcon.vue > name 1`] = `"#icon-leedom"`;
