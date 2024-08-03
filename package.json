@@ -3,7 +3,7 @@
   "type": "module",
   "version": "0.4.1",
   "private": true,
-  "packageManager": "pnpm@9.4.0",
+  "packageManager": "pnpm@9.6.0",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
@@ -28,12 +28,12 @@
     "vue-router": "^4.4.2"
   },
   "devDependencies": {
-    "@leedomjs/eslint-config": "^0.11.3",
+    "@leedomjs/eslint-config": "^0.12.2",
     "@leedomjs/stylelint-config": "^0.3.0",
     "@leedomjs/tailwindcss-color-preset": "^0.7.0",
     "@vitejs/plugin-vue": "^5.1.2",
     "@vitejs/plugin-vue-jsx": "^4.0.0",
-    "autoprefixer": "^10.4.19",
+    "autoprefixer": "^10.4.20",
     "cspell": "^8.13.1",
     "eslint": "^8.57.0",
     "husky": "^9.1.4",
