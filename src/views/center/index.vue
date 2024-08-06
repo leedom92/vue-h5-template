@@ -1,7 +1,8 @@
 <script setup>
 import { useUserStore } from '@/stores/user'
 
-const { author, github, homepage } = useUserStore()
+const userStore = useUserStore()
+const { author, github, homepage } = storeToRefs(userStore)
 
 </script>
 
