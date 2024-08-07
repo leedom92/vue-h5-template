@@ -4,6 +4,7 @@ import { useUserStore } from '@/stores/user'
 const userStore = useUserStore()
 const { author, github, homepage } = storeToRefs(userStore)
 
+const { greet } = userStore
 </script>
 
 <template>

@@ -1,5 +1,6 @@
 import { defineStore } from 'pinia'
-import { Notify } from 'vant'
+import { showNotify } from 'vant'
+import 'vant/lib/notify/style'
 
 export const useUserStore = defineStore('user', {
   state: () => ({
@@ -16,7 +17,7 @@ export const useUserStore = defineStore('user', {
   },
   actions: {
     greet() {
-      Notify({ type: 'primary', message: `Hello! I'm ${this.author}.` })
+      showNotify({ type: 'primary', message: `Hello! I'm ${this.author}.` })
     },
   },
 })
