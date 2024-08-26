@@ -62,15 +62,18 @@ onMounted(() => {
         </template>
       </van-cell>
       <van-cell
-        title="Vant组件按需加载"
-        url="https://vant-contrib.gitee.io/vant/v2/#/zh-CN/"
+        title="Vant"
+        url="https://vant-ui.github.io/vant/#/zh-CN"
       >
         <template #icon>
           <svg-icon class="mr-2 size-6" name="vant" />
         </template>
       </van-cell>
 
-      <van-cell title="Sass">
+      <van-cell
+        title="Sass"
+        url="https://sass-lang.com"
+      >
         <template #icon>
           <svg-icon class="mr-2 size-6" name="sass" />
         </template>
@@ -85,13 +88,13 @@ onMounted(() => {
         </template>
       </van-cell>
 
-      <van-cell title="ESLint">
+      <van-cell title="ESLint" url="https://eslint.org">
         <template #icon>
           <svg-icon class="mr-2 size-6" name="eslint" />
         </template>
       </van-cell>
 
-      <van-cell title="Stylelint">
+      <van-cell title="Stylelint" url="https://stylelint.io">
         <template #icon>
           <svg-icon class="mr-2 size-6" name="stylelint" />
         </template>
