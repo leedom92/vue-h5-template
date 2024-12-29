@@ -27,7 +27,7 @@ onMounted(() => {
       </van-cell>
 
       <van-cell
-        title="Vite 5"
+        title="Vite"
         url="https://vitejs.dev"
       >
         <template #icon>

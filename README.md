@@ -26,7 +26,7 @@ pnpm dev
 ## <span id="todo-list">Todo List</span>
 
 - [x] Vue 3
-- [x] Vite 5
+- [x] Vite
 - [x] Vue Router
 - [x] Vitest
 - [x] Pinia
