@@ -27,7 +27,10 @@ const { greet } = userStore
           :href="github"
           target="_blank"
           rel="noopener noreferrer"
-        >{{ author }}</a>
+          class="inline-flex items-center"
+        >
+          <span class="icon-[logos--github-icon] mr-1 size-4" /> {{ author }}
+        </a>
       </p>
     </div>
   </div>

@@ -22,7 +22,7 @@ onMounted(() => {
         to="vue"
       >
         <template #icon>
-          <svg-icon class="mr-2 size-6" name="vue" />
+          <span class="icon-[logos--vue] mr-2 size-6" />
         </template>
       </van-cell>
 
@@ -31,7 +31,7 @@ onMounted(() => {
         url="https://vitejs.dev"
       >
         <template #icon>
-          <svg-icon class="mr-2 size-6" name="vite" />
+          <span class="icon-[logos--vitejs] mr-2 size-6" />
         </template>
       </van-cell>
 
@@ -49,7 +49,7 @@ onMounted(() => {
         url="https://vitest.dev"
       >
         <template #icon>
-          <svg-icon class="mr-2 size-6" name="vitest" />
+          <span class="icon-[logos--vitest] mr-2 size-6" />
         </template>
       </van-cell>
 
@@ -58,7 +58,7 @@ onMounted(() => {
         url="https://pinia.vuejs.org"
       >
         <template #icon>
-          <svg-icon class="mr-2 size-6" name="pinia" />
+          <span class="icon-[logos--pinia] mr-2 size-6" />
         </template>
       </van-cell>
       <van-cell
@@ -75,7 +75,7 @@ onMounted(() => {
         url="https://sass-lang.com"
       >
         <template #icon>
-          <svg-icon class="mr-2 size-6" name="sass" />
+          <span class="icon-[logos--sass] mr-2 size-6" />
         </template>
       </van-cell>
 
@@ -90,13 +90,13 @@ onMounted(() => {
 
       <van-cell title="ESLint" url="https://eslint.org">
         <template #icon>
-          <svg-icon class="mr-2 size-6" name="eslint" />
+          <span class="icon-[logos--eslint] mr-2 size-6" />
         </template>
       </van-cell>
 
       <van-cell title="Stylelint" url="https://stylelint.io">
         <template #icon>
-          <svg-icon class="mr-2 size-6" name="stylelint" />
+          <span class="icon-[logos--stylelint] mr-2 size-6" />
         </template>
       </van-cell>
       <van-cell title="NProgress.js进度条" />

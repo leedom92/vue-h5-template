@@ -28,6 +28,8 @@
     "vue-router": "^4.5.0"
   },
   "devDependencies": {
+    "@iconify/json": "^2.2.290",
+    "@iconify/tailwind": "^1.2.0",
     "@leedomjs/eslint-config": "^0.12.3",
     "@leedomjs/stylelint-config": "^0.4.0",
     "@leedomjs/tailwindcss-color-preset": "^0.8.0",

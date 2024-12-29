@@ -1,6 +1,8 @@
-/** @type {import('tailwindcss').Config} */
 import colorPreset from '@leedomjs/tailwindcss-color-preset'
 
+const { addDynamicIconSelectors } = require('@iconify/tailwind')
+
+/** @type {import('tailwindcss').Config} */
 export default {
   presets: [
     /**
@@ -31,5 +33,7 @@ export default {
   theme: {
     extend: {},
   },
-  plugins: [],
+  plugins: [
+    addDynamicIconSelectors(),
+  ],
 }
