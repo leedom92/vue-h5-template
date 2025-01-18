@@ -20,6 +20,7 @@
     "src/**/*.{vue,css,scss}": "stylelint --fix"
   },
   "dependencies": {
+    "@iconify-json/logos": "^1.2.4",
     "axios": "^1.7.9",
     "nprogress": "^0.2.0",
     "pinia": "^2.3.0",
@@ -28,7 +29,6 @@
     "vue-router": "^4.5.0"
   },
   "devDependencies": {
-    "@iconify/json": "^2.2.297",
     "@iconify/tailwind": "^1.2.0",
     "@leedomjs/eslint-config": "^0.12.3",
     "@leedomjs/stylelint-config": "^0.4.0",

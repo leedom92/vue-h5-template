@@ -34,6 +34,6 @@ export default {
     extend: {},
   },
   plugins: [
-    addDynamicIconSelectors(),
+    addDynamicIconSelectors(['logos']),
   ],
 }
