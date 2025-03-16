@@ -1,17 +1,33 @@
 <script setup>
+import { showConfirmDialog, showSuccessToast } from 'vant'
+import 'vant/lib/dialog/style'
+import 'vant/lib/toast/style'
+
 import { useUserStore } from '@/stores/user'
 
 const userStore = useUserStore()
 const { author, github, homepage } = storeToRefs(userStore)
 
-const { greet } = userStore
+const { greet, $reset } = userStore
+
+function resetUserStore() {
+  showConfirmDialog({
+    title: '提示',
+    message: '是否重置用户信息?',
+    confirmButtonColor: '#ee0a24',
+    confirmButtonText: '重置',
+  }).then(async () => {
+    await $reset()
+    showSuccessToast('重置成功')
+  })
+}
 </script>
 
 <template>
   <div class="center">
     <div class="flex min-h-screen flex-col items-center justify-center">
       <svg-icon name="leedom" class="size-28" />
-      <h2 class="p-4 text-gray-800">
+      <h2 class="p-4 text-gray-800" @click="resetUserStore">
         VUE H5 开发模版
       </h2>
       <p class="text-center text-gray-500">

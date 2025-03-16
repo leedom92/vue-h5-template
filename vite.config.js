@@ -33,7 +33,9 @@ export default defineConfig(({ command }) => (
       }),
       Components({
         dts: true,
-        resolvers: [VantResolver()],
+        resolvers: [VantResolver({
+          importStyle: true,
+        })],
         dirs: ['src/components'],
       }),
       // https://github.com/vbenjs/vite-plugin-svg-icons/blob/main/README.md
