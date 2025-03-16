@@ -1,6 +1,18 @@
 # vue-h5-template
 
-🍰「Vue移动端项目模版」Vite + Vue Router + Vitest + Vant + Tailwindcss + Sass + NProgress + ESLint + Stylelint + CSpell
+<p align="center">
+  <a href="https://github.com/vuejs/core">
+    <img src="https://img.shields.io/badge/vue-3.5.13-brightgreen.svg" alt="vue">
+  </a>
+  <a href="https://github.com/youzan/vant">
+    <img src="https://img.shields.io/badge/vant-4.9.18-brightgreen.svg" alt="element-ui">
+  </a>
+  <a href="https://github.com/leedom92/vue-h5-template/blob/main/LICENSE">
+    <img src="https://img.shields.io/github/license/mashape/apistatus.svg" alt="license">
+  </a>
+</p>
+
+🍰「Vue移动端项目模版」 Vue 3 + Vite + Vue Router + Vitest + Vant + Tailwindcss + Sass + NProgress + ESLint + Stylelint + CSpell
 
 若您习惯 `vue 2` + `vite` 开发，请[戳这里](https://github.com/leedom92/vue-h5-template/tree/vue2-h5-vite-template)传送
 
