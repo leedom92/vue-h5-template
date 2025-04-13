@@ -1,0 +1,23 @@
+{
+  "editor.formatOnSave": false,
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": "explicit",
+    "source.fixAll.stylelint": "explicit",
+    "source.organizeImports": "never"
+  },
+  "eslint.validate": [
+    "javascript",
+    "javascriptreact",
+    "typescript",
+    "typescriptreact",
+    "vue",
+    "html",
+    "vue-html",
+    "jsx",
+    "json",
+    "jsonc",
+    "json5",
+    "markdown",
+    "yaml"
+  ],
+}
