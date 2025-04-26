@@ -5,7 +5,7 @@
     <img src="https://img.shields.io/badge/vue-3.5.13-brightgreen.svg" alt="vue">
   </a>
   <a href="https://github.com/youzan/vant">
-    <img src="https://img.shields.io/badge/vant-4.9.18-brightgreen.svg" alt="element-ui">
+    <img src="https://img.shields.io/badge/vant-4.9.19-brightgreen.svg" alt="element-ui">
   </a>
   <a href="https://github.com/leedom92/vue-h5-template/blob/main/LICENSE">
     <img src="https://img.shields.io/github/license/mashape/apistatus.svg" alt="license">
@@ -200,17 +200,13 @@ export function login(params) {
 
 ### <span id="standard">ESLint 统一开发规范</span>
 
-> 使用 [`@leedomjs/eslint-config`](https://www.npmjs.com/package/@leedomjs/eslint-config) 作为ESLint默认配置
+> 使用 [`@leedom92/eslint-config`](https://www.npmjs.com/package/@leedom92/eslint-config) 作为ESLint默认配置
 
 ``` js
-// .eslintrc.cjs 可自定义规则
-module.exports = {
-  extends: "@leedomjs"
-  // 自定义规则
-  rules: {
-    
-  }
-}
+// eslint.config.js 可自定义规则
+import leedom from '@leedom92/eslint-config'
+
+export default leedom()
 ```
 
 **[🔝](#todo-list)**
