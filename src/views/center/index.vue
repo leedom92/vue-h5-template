@@ -31,11 +31,7 @@ function resetUserStore() {
         VUE H5 开发模版
       </h2>
       <p class="text-center text-gray-500">
-        项目地址：<a
-          :href="homepage"
-          target="_blank"
-          rel="noopener noreferrer"
-        >{{ homepage }}</a>
+        项目地址：<a :href="homepage" target="_blank" rel="noopener noreferrer">{{ homepage }}</a>
       </p>
       <p class="p-4 text-gray-500">
         <span @click="greet">项目作者</span>：
