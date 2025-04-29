@@ -10,7 +10,7 @@ const compat = new FlatCompat({
 
 const eslintConfig = [
   js.configs.recommended, // 直接使用推荐配置
-  ...compat.extends('@leedomjs/eslint-config-basic', '.eslintrc-auto-import.json'), // 兼容旧版 extends 语法
+  ...compat.extends('@leedomjs', '.eslintrc-auto-import.json'), // 兼容旧版 extends 语法
 ]
 
 export default eslintConfig
