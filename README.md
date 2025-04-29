@@ -5,7 +5,7 @@
     <img src="https://img.shields.io/badge/vue-3.5.13-brightgreen.svg" alt="vue">
   </a>
   <a href="https://github.com/youzan/vant">
-    <img src="https://img.shields.io/badge/vant-4.9.18-brightgreen.svg" alt="element-ui">
+    <img src="https://img.shields.io/badge/vant-4.9.19-brightgreen.svg" alt="element-ui">
   </a>
   <a href="https://github.com/leedom92/vue-h5-template/blob/main/LICENSE">
     <img src="https://img.shields.io/github/license/mashape/apistatus.svg" alt="license">
