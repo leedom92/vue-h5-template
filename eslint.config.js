@@ -9,6 +9,9 @@ const compat = new FlatCompat({
 })
 
 const eslintConfig = [
+  {
+    ignores: ['package.json'], // 忽略目录
+  },
   js.configs.recommended, // 直接使用推荐配置
   ...compat.extends('@leedomjs', '.eslintrc-auto-import.json'), // 兼容旧版 extends 语法
 ]
