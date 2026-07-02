@@ -1,7 +1,10 @@
 <script setup>
 const route = useRoute()
 const props = defineProps({
-  routes: Array,
+  routes: {
+    type: Array,
+    default: () => [],
+  },
 })
 
 const active = ref(route.name)

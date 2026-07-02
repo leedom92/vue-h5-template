@@ -5,19 +5,15 @@
   "private": true,
   "packageManager": "pnpm@9.15.4",
   "scripts": {
-    "dev": "vite",
-    "build": "vite build",
-    "preview": "vite preview",
-    "test": "vitest",
+    "dev": "vp dev",
+    "build": "vp build",
+    "preview": "vp preview",
+    "test": "vp test",
     "check:spell": "cspell src",
-    "lint:es": "eslint .",
+    "lint:es": "vp lint .",
     "lint:style": "stylelint 'src/**/*.{vue,css,scss}'",
     "lint:fix": "pnpm lint:es --fix && pnpm lint:style --fix",
-    "prepare": "husky"
-  },
-  "lint-staged": {
-    "*.{js,json,vue}": "eslint --fix",
-    "src/**/*.{vue,css,scss}": "stylelint --fix"
+    "prepare": "vp config"
   },
   "dependencies": {
     "@iconify-json/logos": "^1.2.5",
@@ -30,7 +26,6 @@
   },
   "devDependencies": {
     "@iconify/tailwind": "^1.2.0",
-    "@leedomjs/eslint-config": "^0.13.0",
     "@leedomjs/stylelint-config": "^0.4.0",
     "@leedomjs/tailwindcss-color-preset": "^0.8.0",
     "@vitejs/plugin-vue": "^6.0.5",
@@ -38,19 +33,17 @@
     "@vue/test-utils": "^2.4.6",
     "autoprefixer": "^10.4.21",
     "cspell": "^9.2.0",
-    "eslint": "^9.31.0",
-    "husky": "^9.1.7",
     "jsdom": "^26.1.0",
-    "lint-staged": "^16.1.2",
     "postcss": "^8.5.6",
     "sass": "^1.89.2",
     "stylelint": "^16.22.0",
     "tailwindcss": "^3.4.17",
     "unplugin-auto-import": "^21.0.0",
     "unplugin-vue-components": "^32.0.0",
-    "vite": "^8.0.3",
+    "vite": "catalog:",
     "vite-plugin-svg-icons": "^2.0.1",
     "vite-plugin-vue-devtools": "^8.1.1",
-    "vitest": "^3.2.4"
+    "vitest": "catalog:",
+    "vite-plus": "catalog:"
   }
 }
