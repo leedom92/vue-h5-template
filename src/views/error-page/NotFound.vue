@@ -6,7 +6,7 @@ const inter = ref(null)
 onMounted(() => {
   inter.value = setInterval(() => {
     time.value--
-    time.value === 0 && router.replace('/')
+    if (time.value === 0) router.replace('/')
   }, 1000)
 })
 
