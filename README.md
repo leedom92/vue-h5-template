@@ -12,7 +12,9 @@
   </a>
 </p>
 
-🍰「Vue移动端项目模版」 Vue 3 + Vite + Vue Router + Vitest + Vant + Tailwindcss + Sass + NProgress + ESLint + Stylelint + CSpell
+🍰「Vue移动端项目模版」 Vue 3 +  Vite + Vite-Plus + Vue Router + Vitest + Vant + Tailwindcss + Sass + NProgress + ESLint + Stylelint + CSpell
+
+若您习惯 `vue 3` + `vite` 开发，请[戳这里](https://github.com/leedom92/vue-h5-template/tree/vite)传送
 
 若您习惯 `vue 2` + `vite` 开发，请[戳这里](https://github.com/leedom92/vue-h5-template/tree/vue2-h5-vite-template)传送
 
@@ -39,6 +41,7 @@ pnpm dev
 
 - [x] Vue 3
 - [x] Vite
+- [x] Vite+
 - [x] Vue Router
 - [x] Vitest
 - [x] Pinia
